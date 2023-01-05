@@ -1,6 +1,14 @@
 {
     "name":"Learning Point",
     "short_name":"LP",
+    "icons":[
+        {
+            "src": "./assets/icon.png",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+
     "theme_color": "#000000",
     "background_color": "#000000",
     "start_url":"/Learning-Point/",
