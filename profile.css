@@ -1,0 +1,144 @@
+.profile-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-profile {
+  width: 100%;
+  height: 844px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(241, 241, 241, 1);
+}
+.profile-hey-kristina {
+  top: 65px;
+  left: 114px;
+  width: 161px;
+  height: 196px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.profile-text {
+  top: 136px;
+  color: rgba(0, 0, 0, 1);
+  width: 161px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  align-self: auto;
+  font-style: Black;
+  text-align: center;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.profile-profile-icon {
+  top: 0px;
+  left: 22px;
+  width: 118px;
+  height: 118px;
+  position: absolute;
+  border-color: transparent;
+}
+.profile-moon {
+  top: 65px;
+  left: 318px;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  border-color: transparent;
+}
+.profile-rectangle21 {
+  top: 289px;
+  left: 35px;
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 30px;
+}
+.profile-rectangle23 {
+  top: 456px;
+  left: 35px;
+  width: 320px;
+  height: 155px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 30px;
+}
+.profile-rectangle24 {
+  top: 623px;
+  left: 35px;
+  width: 155px;
+  height: 150px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 30px;
+}
+.profile-rectangle25 {
+  top: 623px;
+  left: 200px;
+  width: 155px;
+  height: 150px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 30px;
+}
+.profile-rectangle22 {
+  top: 289px;
+  left: 200px;
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 30px;
+}
+.profile-back1 {
+  top: 65px;
+  left: 49px;
+  width: 15px;
+  height: 26px;
+  position: absolute;
+  border-color: transparent;
+}
+@media(max-width: 479px) {
+  .profile-text {
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .profile-email {
+    left: 0px;
+    color: #7c7c7c;
+    right: 0px;
+    bottom: -7px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+  }
+}

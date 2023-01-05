@@ -1,0 +1,120 @@
+.exit-listening-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.exit-listening-areyousure-listening {
+  width: 100%;
+  height: 212px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10000000149011612) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.exit-listening-text {
+  top: 57px;
+  left: 53px;
+  color: rgba(85, 85, 85, 1);
+  width: 233px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: Semi Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.exit-listening-rectangle29 {
+  top: 128px;
+  left: 53px;
+  width: 103px;
+  height: 54px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 50px;
+}
+.exit-listening-rectangle30 {
+  top: 128px;
+  left: 183px;
+  width: 103px;
+  height: 54px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 50px;
+}
+.exit-listening-text3 {
+  top: 144px;
+  left: 222px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.exit-listening-text5 {
+  top: 144px;
+  left: 89px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+@media(max-width: 479px) {
+  .exit-listening-text {
+    top: 57px;
+    left: 0px;
+    color: rgb(85, 85, 85);
+    right: 0px;
+    width: 233px;
+    margin: auto;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .exit-listening-rectangle29 {
+    bottom: 30px;
+  }
+  .exit-listening-rectangle30 {
+    right: 0px;
+    margin: auto;
+  }
+  .exit-listening-text3 {
+    top: 143px;
+    left: 274px;
+  }
+}

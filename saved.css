@@ -1,0 +1,219 @@
+.saved-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.saved-saved {
+  width: 100%;
+  height: 844px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: transparent;
+  background-color: rgba(241, 241, 241, 1);
+}
+.saved-rectangle4 {
+  top: 178px;
+  left: 28px;
+  width: 334px;
+  height: 621px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 23px;
+}
+.saved-text {
+  top: 445px;
+  left: 112px;
+  color: rgba(189, 189, 189, 1);
+  width: 166px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.saved-menubarr {
+  top: 60px;
+  left: 35px;
+  width: 319px;
+  height: 106px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+}
+.saved-text02 {
+  top: 75px;
+  color: rgba(0, 0, 0, 1);
+  width: 68px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.saved-text04 {
+  top: 75px;
+  left: 76px;
+  color: rgba(124, 124, 124, 1);
+  width: 69px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.saved-text06 {
+  top: 75px;
+  left: 153px;
+  color: rgba(124, 124, 124, 1);
+  width: 66px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.saved-text08 {
+  top: 75px;
+  left: 227px;
+  color: rgba(124, 124, 124, 1);
+  width: 92px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.saved-profile-icon {
+  top: 0px;
+  left: 7px;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  border-color: transparent;
+}
+.saved-text09 {
+  left: 65px;
+  color: rgba(0, 0, 0, 1);
+  width: 138px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.saved-moon {
+  top: 5px;
+  left: 283px;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  border-color: transparent;
+}
+@media(max-width: 479px) {
+  .saved-menubarr {
+    top: 62px;
+    left: 0px;
+    right: 0px;
+    width: 328px;
+    margin: auto;
+  }
+  .saved-text02 {
+    left: 0px;
+    bottom: 0px;
+    font-size: 22px;
+    color: #7c7c7c;
+  }
+  .saved-text04 {
+    bottom: 0px;
+    font-size: 22px;
+    color: black;
+  }
+  .saved-text06 {
+    bottom: 0px;
+    font-size: 22px;
+  }
+  .saved-text08 {
+    color: rgb(124, 124, 124);
+    bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .saved-text09 {
+    top: 0px;
+    left: 65px;
+    color: rgb(0, 0, 0);
+    width: var(--dl-size-size-xlarge);
+    font-size: 22px;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .saved-text12 {
+    top: 23px;
+    left: 66px;
+    color: #7c7c7c;
+    position: absolute;
+    font-size: 12px;
+    text-align: left;
+    font-family: Arial;
+  }
+}

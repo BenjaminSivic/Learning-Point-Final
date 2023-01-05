@@ -1,0 +1,646 @@
+.settings-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.settings-settings {
+  width: 100%;
+  height: 844px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: center;
+  background-color: rgba(241, 241, 241, 1);
+}
+.settings-rectangle3 {
+  top: 176.99993896484375px;
+  left: 26.99999237060547px;
+  width: 334px;
+  height: 634px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 22.9999942779541px;
+}
+.settings-profile-icon {
+  top: 221px;
+  left: 70.99998474121094px;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  border-color: transparent;
+}
+.settings-text {
+  top: 224.99993896484375px;
+  left: 150.99996948242188px;
+  color: rgba(0, 0, 0, 1);
+  width: 181px;
+  height: auto;
+  position: absolute;
+  font-size: 22.9999942779541px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.settings-buttons {
+  top: 307.00006103515625px;
+  left: 76.99992370605469px;
+  width: 229px;
+  height: 38.999996185302734px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.settings-rectangle8 {
+  top: 0px;
+  left: 0px;
+  width: 117px;
+  height: 39px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-rectangle9 {
+  top: -0.00007944300159579143px;
+  left: 129.99993896484375px;
+  width: 99px;
+  height: 39px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-text03 {
+  top: 7.999921798706055px;
+  left: 149.99989318847656px;
+  color: rgba(255, 255, 255, 1);
+  width: 61px;
+  height: auto;
+  position: absolute;
+  font-size: 15.999999046325684px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-text05 {
+  top: 7.999921798706055px;
+  left: 15.999956130981445px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15.999999046325684px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-line2 {
+  top: 379.0000915527344px;
+  left: 66.99996948242188px;
+  width: 253px;
+  height: 0px;
+  position: absolute;
+}
+.settings-line3 {
+  top: 512px;
+  left: 69.00000762939453px;
+  width: 253px;
+  height: 0px;
+  position: absolute;
+}
+.settings-line4 {
+  top: 641px;
+  left: 66.99996948242188px;
+  width: 253px;
+  height: 0px;
+  position: absolute;
+}
+.settings-text07 {
+  top: 401.00006103515625px;
+  left: 107.99996948242188px;
+  color: rgba(0, 0, 0, 1);
+  width: 176px;
+  height: auto;
+  position: absolute;
+  font-size: 19.999996185302734px;
+  align-self: auto;
+  font-style: Black;
+  text-align: center;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.settings-text09 {
+  top: 534.9998168945312px;
+  left: 106px;
+  color: rgba(0, 0, 0, 1);
+  width: 176px;
+  height: auto;
+  position: absolute;
+  font-size: 19.999996185302734px;
+  align-self: auto;
+  font-style: Black;
+  text-align: center;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.settings-text11 {
+  top: 664.0001220703125px;
+  left: 101px;
+  color: rgba(0, 0, 0, 1);
+  width: 189px;
+  height: auto;
+  position: absolute;
+  font-size: 19.999996185302734px;
+  align-self: auto;
+  font-style: Black;
+  text-align: center;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.settings-options {
+  top: 446.0000305175781px;
+  left: 82.99996948242188px;
+  width: 223.00001525878906px;
+  height: 32.99999237060547px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.settings-rectangle11 {
+  top: 0px;
+  left: 0px;
+  width: 68px;
+  height: 33px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-rectangle12 {
+  top: -0.000032952098990790546px;
+  left: 170.99998474121094px;
+  width: 52px;
+  height: 33px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-rectangle13 {
+  top: -0.000032952098990790546px;
+  left: 76.99999237060547px;
+  width: 85px;
+  height: 33px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-text13 {
+  top: 5.999955177307129px;
+  left: 14.99998950958252px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15.999999046325684px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-text15 {
+  top: 4.999964714050293px;
+  left: 184.99996948242188px;
+  color: rgba(123, 123, 123, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15.999999046325684px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-text17 {
+  top: 5.999955177307129px;
+  left: 92.0000228881836px;
+  color: rgba(123, 123, 123, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15.999999046325684px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-options1 {
+  top: 585.9998168945312px;
+  left: 113px;
+  width: 166.99998474121094px;
+  height: 33.00020980834961px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.settings-rectangle111 {
+  top: 0px;
+  left: 0px;
+  width: 67px;
+  height: 33px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-rectangle121 {
+  top: 0.00018055795226246119px;
+  left: 91.9999771118164px;
+  width: 75px;
+  height: 33px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-text19 {
+  top: 5.000156402587891px;
+  left: 16.000009536743164px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15.999999046325684px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-text21 {
+  top: 5.000156402587891px;
+  left: 105px;
+  color: rgba(123, 123, 123, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15.999999046325684px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-rectangle14 {
+  top: 711.9999389648438px;
+  left: 145px;
+  width: 101px;
+  height: 45px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 49.99998092651367px;
+}
+.settings-text23 {
+  top: 719px;
+  left: 169.99998474121094px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 19.999996185302734px;
+  align-self: auto;
+  font-style: Medium;
+  text-align: center;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 139.9999976158142%;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+.settings-menubarr {
+  top: 60px;
+  left: 35px;
+  width: 319px;
+  height: 106px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+}
+.settings-text25 {
+  top: 75px;
+  color: rgba(0, 0, 0, 1);
+  width: 68px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-text27 {
+  top: 75px;
+  left: 76px;
+  color: rgba(124, 124, 124, 1);
+  width: 69px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-text29 {
+  top: 75px;
+  left: 153px;
+  color: rgba(124, 124, 124, 1);
+  width: 66px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-text31 {
+  top: 75px;
+  left: 227px;
+  color: rgba(124, 124, 124, 1);
+  width: 92px;
+  height: auto;
+  position: absolute;
+  font-size: 23px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-profile-icon1 {
+  top: 0px;
+  left: 7px;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  border-color: transparent;
+}
+.settings-text32 {
+  left: 65px;
+  color: rgba(0, 0, 0, 1);
+  width: 138px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  align-self: auto;
+  font-style: Black;
+  text-align: left;
+  font-family: Satoshi;
+  font-weight: 900;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.settings-moon {
+  top: 5px;
+  left: 283px;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  border-color: transparent;
+}
+@media(max-width: 479px) {
+  .settings-text {
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 140%;
+    text-decoration: none;
+  }
+  .settings-text03 {
+    top: 8px;
+    left: 148px;
+    right: 12px;
+    width: 70px;
+  }
+  .settings-text05 {
+    top: 8px;
+    left: 9px;
+    margin: auto;
+    text-align: center;
+  }
+  .settings-text07 {
+    top: 410px;
+    left: 0px;
+    right: 0px;
+    width: 200px;
+    margin: auto;
+  }
+  .settings-text09 {
+    top: 550px;
+    left: 0px;
+    right: 0px;
+    width: 190px;
+    margin: auto;
+  }
+  .settings-text11 {
+    top: 677px;
+    left: 0px;
+    right: 0px;
+    width: 210px;
+    margin: auto;
+  }
+  .settings-text13 {
+    top: 5px;
+    left: 11px;
+  }
+  .settings-text15 {
+    top: 5px;
+    left: 183px;
+    right: 13px;
+  }
+  .settings-text17 {
+    top: 5px;
+    left: 86px;
+  }
+  .settings-text19 {
+    top: 5px;
+    left: 13px;
+  }
+  .settings-text21 {
+    top: 5px;
+    left: 100px;
+    right: 7px;
+  }
+  .settings-text23 {
+    left: 167px;
+    bottom: 96px;
+  }
+  .settings-email {
+    top: 248px;
+    left: 152px;
+    color: #7c7c7c;
+    position: absolute;
+  }
+  .settings-menubarr {
+    top: 62px;
+    left: 0px;
+    right: 0px;
+    width: 328px;
+    margin: auto;
+  }
+  .settings-text25 {
+    left: 0px;
+    bottom: 0px;
+    font-size: 22px;
+    color:rgba(124, 124, 124, 1)
+  }
+  .settings-text27 {
+    bottom: 0px;
+    font-size: 22px;
+  }
+  .settings-text29 {
+    bottom: 0px;
+    font-size: 22px;
+  }
+  .settings-text31 {
+    color: rgb(0, 0, 0);
+    bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .settings-text32 {
+    top: 0px;
+    left: 65px;
+    color: rgb(0, 0, 0);
+    width: var(--dl-size-size-xlarge);
+    font-size: 22px;
+    font-weight: 900;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .settings-text35 {
+    top: 23px;
+    left: 66px;
+    color: #7c7c7c;
+    position: absolute;
+    font-size: 12px;
+    text-align: left;
+    font-family: Arial;
+  }
+}
