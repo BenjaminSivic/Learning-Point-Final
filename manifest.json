@@ -1,0 +1,9 @@
+{
+    "name":"Learning Point",
+    "short_name":"LP",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "start_url":"/Learning-Point/",
+    "display":"standalone",
+    "orientation":"portrait"
+}
