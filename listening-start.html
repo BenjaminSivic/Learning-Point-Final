@@ -137,6 +137,11 @@
             document.getElementById("Played").style.visibility = "hidden";
             clearInterval(timer);
           } 
+
+          var aud = document.getElementById("myAudio");
+          aud.onended = function() {
+          window.open('question-1-listening.html', '_top');
+          };
           </script>
           
 
