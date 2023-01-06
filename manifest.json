@@ -1,6 +1,6 @@
 {
-    "name": "Shopping App",
-    "short_name": "Shopping App",
+    "name": "Learning Point",
+    "short_name": "LP",
     "icons": [
       {
         "src": "./icon/icon-192.png",
