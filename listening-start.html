@@ -114,11 +114,62 @@
             />
           </div>
           <div class="listening-start-timer">
-            <span class="listening-start-text"><span>00:00</span></span>
+            <span id="TimerMin" class="listening-start-text">00</span>
+            <span class="listening-start-text2">:</span>
+            <span id="TimerSec" class="listening-start-text3">00</span>
           </div>
+
+          <audio id="myAudio" src="./audio/BestFriends.mp3"></audio>
+
+          <script>
+            var x = document.getElementById("myAudio"); 
+
+          function playAudio() { 
+            x.play(); 
+            document.getElementById("Paused").style.visibility = "hidden";
+            document.getElementById("Played").style.visibility = "visible";
+            Time();
+          } 
+          
+          function pauseAudio() { 
+            x.pause(); 
+            document.getElementById("Paused").style.visibility = "visible";
+            document.getElementById("Played").style.visibility = "hidden";
+            clearInterval(timer);
+          } 
+          </script>
+          
+
+          <script>
+            var timer;
+            var seconds=document.getElementById('TimerSec');
+            var minutes=document.getElementById('TimerMin');
+            var sec=1;
+            var min=0;
+            function Time(){
+              timer=setInterval(()=>{
+                if(sec>=10){
+                  seconds.innerHTML=sec;
+                }else{
+                seconds.innerHTML= '0'+sec;
+                }
+                sec++;
+                
+                if(sec>60){
+                  sec=0;
+                  min++;
+                  seconds.innerHTML='0'+sec;
+                  minutes.innerHTML='0'+min;
+                }
+              },1000)
+            }
+          </script>
+          <a href="question-1-listening.html">
           <div class="listening-start-finish">
             <span class="listening-start-text02"><span>Done</span></span>
           </div>
+          </a>
+          
           <span class="listening-start-text04">
             <span>
               <span>Your listening has started.</span>
@@ -138,7 +189,9 @@
             class="listening-start-ellipse11"
           />
           <span class="listening-start-text11">×</span>
-          <div class="listening-start-pause-button">
+
+          <a onclick="pauseAudio()">
+          <div id="Played" class="listening-start-pause-button">
             <img
               alt="Ellipse188846"
               src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/637c87df-1119-4334-b00d-d0653c797516?org_if_sml=13704"
@@ -155,6 +208,22 @@
               class="listening-start-rectangle41"
             />
           </div>
+          </a>
+
+          <a onclick="playAudio()">
+          <div id="Paused" class="listening-pause-play-button">
+            <img
+              alt="Ellipse198848"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/136f9a56-a968-4766-aa16-63fe2d1f0047?org_if_sml=13815"
+              class="listening-pause-ellipse19"
+            />
+            <img
+              alt="Polygon18848"
+              src="public/playground_assets/polygon18848-f4c.svg"
+              class="listening-pause-polygon1"
+            />
+          </div>
+          </a>
         </div>
       </div>
     </div>

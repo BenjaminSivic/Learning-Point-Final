@@ -71,7 +71,7 @@
   border-style: none;
   border-width: 0;
   margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 30px 30px 30px 30px;
   margin-bottom: 0;
   flex-direction: row;
   justify-content: flex-start;
@@ -80,6 +80,38 @@
 .listening-start-text {
   top: 14px;
   left: 17px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.listening-start-text2 {
+  top: 13px;
+  left: 51px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  align-self: auto;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.listening-start-text3 {
+  top: 14px;
+  left: 59px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -109,7 +141,7 @@
   border-style: none;
   border-width: 0;
   margin-right: 0;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 30px 30px 30px 30px;
   margin-bottom: 0;
   flex-direction: row;
   justify-content: flex-start;
@@ -242,4 +274,42 @@
   position: absolute;
   border-color: transparent;
   border-radius: 20px;
+}
+.listening-pause-play-button {
+  top: 201px;
+  left: 76px;
+  width: 237px;
+  height: 237px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.listening-pause-polygon1 {
+  top: 50px;
+  left: 188px;
+  width: 138px;
+  height: 138px;
+  position: absolute;
+}
+@media(max-width: 479px) {
+  .listening-pause-polygon1 {
+    top: 72px;
+    left: 78px;
+    width: 94px;
+    height: 94px;
+    margin: auto;
+  }
 }

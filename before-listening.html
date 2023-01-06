@@ -109,13 +109,35 @@
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/0c2dfa4a-270e-495c-afbb-764683a5bcc3?org_if_sml=11571"
             class="before-listening-ellipse10"
           />
-          <span class="before-listening-text2">5</span>
+          <span id="timer" class="before-listening-text2">5</span>
+
+          <a href="index.html">
           <img
             alt="Rectangle388843"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/090f9940-8e1f-4fa6-9e7d-04597862f7a4?org_if_sml=11173"
             class="before-listening-rectangle38"
           />
-          <span class="before-listening-text3"><span>Cancel</span></span>
+          </a>
+          <a href="index.html"><span class="before-listening-text3"><span>Cancel</span></span></a>
+          <script>
+            var timer;
+            var ele = document.getElementById('timer');
+
+            (function(){
+              var sec = 4;
+              if(sec==0){
+                window.open('listening-start.html','_top')
+              }
+              timer = setInterval(()=>{
+                if(sec==0){
+                window.open('listening-start.html','_top')
+                }
+                ele.innerHTML=sec;
+                sec--;
+              }, 1000)
+            })()
+
+          </script>
         </div>
       </div>
     </div>
