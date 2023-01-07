@@ -9,6 +9,7 @@
     
 </head>
 <body>
+    <button id="start" class="start">Start Quiz</button>
     <div id="question" class="question">Aliquam sed nisl sollicitudin condimentum?</div>
         <div id="btn-grid" class="button-grid">
             <button class="button-answer">Answer</button>
@@ -17,7 +18,14 @@
             <button class="button-answer">Answer</button>
         </div>
     
-    <div class="controls">
+        <div id="carousel" class="carousel">
+            <span id="first" class="carousel-button carousel-button-selected"></span>
+            <span id="second" class="carousel-button"></span>
+            <span id="thrid" class="carousel-button"></span>
+            <span id="fourth" class="carousel-button"></span>
+        </div>
+
+    <div id="controls" class="controls">
         <img id="prev" class="left" src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/cd21cece-ee40-4805-9794-a2dbc19cb2e4?org_if_sml=1687"/>
         <img id="next" class="right" src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/68f3d66a-ca76-4990-8258-7dc284465241?org_if_sml=1667"/>
         <button id="exit-btn" class="exit">Exit</button>
@@ -27,6 +35,5 @@
     </a>
 </body>
 <script type="text/javascript" src="./quiz.js"></script>
-
 
 </html>

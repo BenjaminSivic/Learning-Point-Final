@@ -1,8 +1,11 @@
-const startButton = document.getElementById('exit-btn')
+const startButton = document.getElementById('start')
 const nextButton = document.getElementById('next')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('btn-grid')
 const finish=document.getElementById('finish')
+const carousel=document.getElementById('carousel')
+const controls=document.getElementById('controls')
+const question=document.getElementById('question')
 var count=1;
 var correctAnswers=0;
 let shuffledQuestions, currentQuestionIndex
@@ -23,6 +26,11 @@ nextButton.addEventListener('click', () => {
 })
 
 function startGame() {
+  startButton.style.visibility="hidden"
+  question.style.visibility="visible"
+  carousel.style.visibility="visible"
+  controls.style.visibility="visible"
+  answerButtonsElement.style.visibility="visible"
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   setNextQuestion()
@@ -79,6 +87,7 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
+
 
 const questions = [
   {

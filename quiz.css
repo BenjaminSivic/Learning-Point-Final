@@ -4,6 +4,7 @@
 }
 
 .question {
+    visibility: hidden;
     top: 10%;
     left: 7%;
     color: rgba(0, 0, 0, 1);
@@ -24,6 +25,7 @@
   }
 
 .button-grid{
+    visibility: hidden;
     display: grid;
     grid-template-rows: repeat(4, auto);
     top: 295px;
@@ -53,6 +55,7 @@
     color: #FFFFFF;
 }
 .controls{
+    visibility: hidden;
     display: grid;
     grid-template-rows: repeat(2, auto);
     gap: 50px;
@@ -80,7 +83,7 @@
     width: 22%;
     height: 100%;
     top: 92%;
-    left:39%;
+    left:37%;
     position: absolute;
 }
 .right{
@@ -98,4 +101,40 @@
     width: 13.5%;
     height: 6.5%;
     position: absolute;
+}
+.carousel{
+    visibility: hidden;
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap:25%;
+    left:32%;
+    right:35%;
+    top:86%;
+    position: absolute;
+}
+.carousel-button{
+    left:30%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background:#E8E8E8;
+    border-radius: 50%;
+}
+.carousel-button-selected{
+    background: #CDCDCD;
+}
+.start{
+    left:15%;
+    top:30%;
+    position:absolute;
+    border-radius: 50%;
+    width: 70%;
+    height: 33%;
+    border: 0;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 36px;
+    background-color: #50B5FF;
+    color: #F0F0F0;
 }
