@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(./fonts/Satoshi-Medium.ttf);
+}
+
+.question {
+    top: 10%;
+    left: 7%;
+    color: rgba(0, 0, 0, 1);
+    width: 86%;
+    height: auto;
+    position: absolute;
+    font-size: 36px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: center;
+    font-family: Satoshi;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+.button-grid{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    top: 295px;
+    left: 13%;
+    position: absolute;
+    width: 74%;
+    height: 40%;
+    gap: 25px;
+    margin:0;
+    padding: 0;
+   
+  }
+
+.button-answer{
+    width: 100%;
+    height: 95%;
+    border: 0;
+    border-radius: 50px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 24px;
+    background-color: #F0F0F0;
+    color: #929292;
+}
+.button-answer:hover{
+    background-color: #50B5FF;
+    color: #FFFFFF;
+}
+.controls{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+    width: 100%;
+    top: 85%;
+    position: absolute;
+}
+.next{
+    left:75%;
+    position: absolute;
+}
+.prev{
+    left:10%;
+    position: absolute;
+}
+.exit{
+    background-color: #FF7575;
+    color: #FFFFFF;
+    border:0;
+    border-radius: 30px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: Bold;
+    width: 22%;
+    height: 100%;
+    top: 92%;
+    left:39%;
+    position: absolute;
+}
+.right{
+    right: 20%;
+    position: absolute;
+}
+.left{
+    left: 20%;
+    position: absolute;
+}
+.finish{
+    visibility: hidden;
+    left:80%;
+    top:90%;
+    width: 13.5%;
+    height: 6.5%;
+    position: absolute;
+}
