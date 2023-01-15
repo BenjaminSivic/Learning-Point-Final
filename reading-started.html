@@ -140,37 +140,54 @@
     </div>
 
     <script>
-      let historyEasyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-      let historyMediumText="";
-      let historyHardText="";
-      let physicsEasyText="";
-      let physicsMediumText="";
-      let physicsHardText="";
-      let geographyEasyText="";
-      let geographyMediumText="";
-      let geographyHardText="";
-      let informaticsEasyText="";
-      let informaticsMediumText="";
-      let informaticsHardText="";
-      let musicEasyText="";
-      let musicMediumText="";
-      let musicHardText="";
-      let biologyEasyText="";
-      let biologyMediumText="";
-      let biologyHardText="";
-      let literatureEasyText="";
-      let literatureMediumText="";
-      let literatureHardText="";
-      let artEasyText="";
-      let artMediumText="";
-      let artHardText="";
-      let chemistryEasyText="";
-      let chemistryMediumText="";
-      let chemistryHardText="";
+      let historyEasyText="history easy"
+      let historyMediumText="History medium";
+      let historyHardText="History hard";
+      let physicsEasyText="PH easy";
+      let physicsMediumText="PH med";
+      let physicsHardText="PH hard";
+      let geographyEasyText="geo ez";
+      let geographyMediumText="geo mid";
+      let geographyHardText="geo hard";
+      let informaticsEasyText="inf ez";
+      let informaticsMediumText="inf mid";
+      let informaticsHardText="inf hard";
+      let musicEasyText="music ez";
+      let musicMediumText="music mid";
+      let musicHardText="music hard";
+      let biologyEasyText="bio ez";
+      let biologyMediumText="bio mid";
+      let biologyHardText="bio hard";
+      let literatureEasyText="lit ez";
+      let literatureMediumText="lit mid";
+      let literatureHardText="lit hard";
+      let artEasyText="art ez";
+      let artMediumText="art mid";
+      let artHardText="art hard";
+      let chemistryEasyText="chem ez";
+      let chemistryMediumText="chem mid";
+      let chemistryHardText="chem hard";
       
       function MainText(){
-        document.getElementById('Title').innerText="History";
-        document.getElementById('MainText').innerText=historyEasyText }
+        var topic=localStorage.getItem("Topic");
+        var diff=localStorage.getItem("Difficulty");
+        if(topic=1){
+          document.getElementById('Title').innerText="Diff: "+localStorage.getItem("Difficulty")+" Topic: "+ localStorage.getItem("Topic");
+          if(diff=1){
+            document.getElementById('MainText').innerText=historyEasyText;
+          }
+          if(diff=2){
+            document.getElementById('MainText').innerText=historyMediumText;
+          }
+          if(diff=3){
+            document.getElementById('MainText').innerText=historyHardText;
+          }
+        }
+
+
+        
+        
+      }
 
 
       var timer;
