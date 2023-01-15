@@ -364,7 +364,7 @@
       
           <h1 class="form__title">Login</h1>
           <div class="form__input-group">
-              <input type="text" class="form__input" autofocus placeholder="Desired Username">
+              <input id="user" type="text" class="form__input" autofocus placeholder="Desired Username">
           </div>
           <button class="button-answer-cont" onclick="Continue()">Continue</button>
       
@@ -476,8 +476,10 @@
     </div>
 
     <script>
-
+      let username;
       function Continue(){
+        username=document.getElementById("user").value;
+        document.getElementById("User").innerHTML="Hey, "+username;
         document.getElementById("Home").style.visibility="visible";
         document.getElementById("Menubar").style.visibility="visible";
         document.getElementById("Login").style.display="none";
