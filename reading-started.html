@@ -115,6 +115,8 @@
           />
           <span class="reading-started-text10">×</span>
           </a>
+
+          <a onclick="ShowWords()">
           <div class="reading-started-notes">
             <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/d5ddef92-3c9c-4fe6-99f8-79c5b98e8e5e?org_if_sml=1775"
               class="reading-started-ellipse9"
@@ -125,6 +127,7 @@
               class="reading-started-file1"
             />
           </div>
+          </a>
           <div class="reading-started-timer">
             <span id="TimerMin" class="reading-started-minutes">00</span>
             <span class="reading-started-colon">:</span>
@@ -137,9 +140,42 @@
           </a>
         </div>
       </div>
+
+      <div id="Uknown">
+        <link href="./components/unknown-words.css" rel="stylesheet" />
+        <div id="UnkownContainer" class="unknown-words-container">
+          <div class="unknown-words-unknown-words">
+            <span class="unknown-words-text">
+              <span>Write unknown word here:</span>
+            </span>
+            <img
+              src="public/playground_assets/rectangle268836-4v6-300w.png"
+              alt="Rectangle268836"
+              class="unknown-words-rectangle26"
+            />
+            
+            <textarea class="input-field" type="text"></textarea>
+            <a onclick="HideWords()">
+            <div class="unknown-words-finish">
+              <span class="unknown-words-text2"><span>Close</span></span>
+            </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
     </div>
 
+    
+
     <script>
+      function ShowWords(){
+        document.getElementById("UnkownContainer").style.opacity = 100;
+      }
+      function HideWords(){
+        document.getElementById("UnkownContainer").style.opacity= 0;
+      }
+
       let historyEasyText="history easy"
       let historyMediumText="History medium";
       let historyHardText="History hard";
@@ -171,16 +207,120 @@
       function MainText(){
         var topic=localStorage.getItem("Topic");
         var diff=localStorage.getItem("Difficulty");
-        if(topic=1){
-          document.getElementById('Title').innerText="Diff: "+localStorage.getItem("Difficulty")+" Topic: "+ localStorage.getItem("Topic");
-          if(diff=1){
+        if(topic==1){
+          document.getElementById('Title').innerText="History";
+          if(diff==1){
             document.getElementById('MainText').innerText=historyEasyText;
           }
-          if(diff=2){
+          if(diff==2){
             document.getElementById('MainText').innerText=historyMediumText;
           }
-          if(diff=3){
+          if(diff==3){
             document.getElementById('MainText').innerText=historyHardText;
+          }
+        }
+
+        if(topic==2){
+          document.getElementById('Title').innerText="Physics";
+          if(diff==1){
+            document.getElementById('MainText').innerText=physicsEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=physicsMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=physicsHardText;
+          }
+        }
+
+        if(topic==3){
+          document.getElementById('Title').innerText="Geography";
+          if(diff==1){
+            document.getElementById('MainText').innerText=geographyEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=geographyMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=geographyHardText;
+          }
+        }
+
+        if(topic==4){
+          document.getElementById('Title').innerText="Informatics";
+          if(diff==1){
+            document.getElementById('MainText').innerText=informaticsEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=informaticsMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=informaticsHardText;
+          }
+        }
+
+        if(topic==5){
+          document.getElementById('Title').innerText="Music";
+          if(diff==1){
+            document.getElementById('MainText').innerText=musicEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=musicMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=musicHardText;
+          }
+        }
+
+        if(topic==6){
+          document.getElementById('Title').innerText="Biology";
+          if(diff==1){
+            document.getElementById('MainText').innerText=biologyEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=biologyMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=biologyHardText;
+          }
+        }
+
+        if(topic==7){
+          document.getElementById('Title').innerText="Literature";
+          if(diff==1){
+            document.getElementById('MainText').innerText=literatureEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=literatureMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=literatureHardText;
+          }
+        }
+
+        if(topic==8){
+          document.getElementById('Title').innerText="Art";
+          if(diff==1){
+            document.getElementById('MainText').innerText=artEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=artMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=artHardText;
+          }
+        }
+
+        if(topic==9){
+          document.getElementById('Title').innerText="Chemistry";
+          if(diff==1){
+            document.getElementById('MainText').innerText=chemistryEasyText;
+          }
+          if(diff==2){
+            document.getElementById('MainText').innerText=chemistryMediumText;
+          }
+          if(diff==3){
+            document.getElementById('MainText').innerText=chemistryHardText;
           }
         }
 
