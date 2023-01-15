@@ -278,6 +278,7 @@
   left: 35px;
   width: 319px;
   height: 106px;
+  position:absolute;
   display: flex;
   padding: 0;
   position: absolute;
