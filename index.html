@@ -104,8 +104,8 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <div>
+  <body onload="OneTab()">
+    <div id="Home">
       <link href="./homepage.css" rel="stylesheet" />
 
       <div class="homepage-container">
@@ -183,17 +183,17 @@
             </div>
           </div>
           <div class="homepage-menubarr">
-            <a href="index.html"><span class="homepage-text22"><span>Home</span></span></a>
-            <a href="saved.html"><span class="homepage-text24"><span>Saved</span></span></a>
-            <a href="notes.html"><span class="homepage-text26"><span>Notes</span></span></a>
-            <a href="settings.html"><span class="homepage-text28"><span>Settings</span></span></a>
+            <a onclick="OpenHome()"><span class="homepage-text22"><span id="home">Home</span></span></a>
+            <a onclick="OpenSaved()"><span class="homepage-text24"><span id="save">Saved</span></span></a>
+            <a onclick="OpenNotes()"><span class="homepage-text26"><span id="notes">Notes</span></span></a>
+            <a onclick="OpenSettings()"><span class="homepage-text28"><span id="settings">Settings</span></span></a>
             <img
               alt="ProfileIcon7284"
               src="public/playground_assets/profileicon7284-sqq-200h.png"
               class="homepage-profile-icon"
             />
             <span class="homepage-text29">
-              <span>Hey, Blabla</span>
+              <span>Hey, Kristina</span>
               <br />
             </span>
             <img
@@ -210,8 +210,284 @@
       </div>
     </div>
 
+    <!--SAVED WORDS-->
+    <div id="Saved">
+      <link href="./saved.css" rel="stylesheet" />
+
+      <div class="saved-container">
+        <div class="saved-saved">
+          <img
+            alt="Rectangle47280"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/3289bd62-5141-4d8b-a488-b6b7dc7091a8?org_if_sml=138983"
+            class="saved-rectangle4"
+          />
+          <span class="saved-text">
+            <span>Your saved words will appear here.</span>
+          </span>
+          <div class="saved-menubarr">
+            <a onclick="OpenHome()"><span class="homepage-text22"><span id="home">Home</span></span></a>
+            <a onclick="OpenSaved()"><span class="homepage-text24"><span id="save">Saved</span></span></a>
+            <a onclick="OpenNotes()"><span class="homepage-text26"><span id="notes">Notes</span></span></a>
+            <a onclick="OpenSettings()"><span class="homepage-text28"><span id="settings">Settings</span></span></a>
+            <img
+              alt="ProfileIcon7284"
+              src="public/playground_assets/profileicon7284-sqq-200h.png"
+              class="saved-profile-icon"
+            />
+            <span class="saved-text09">
+              <span>Hey, Kristina</span>
+              <br />
+            </span>
+            <img
+              alt="Moon7284"
+              src="public/playground_assets/moon7284-80m-200w.png"
+              class="saved-moon"
+            />
+            <span class="saved-text12">
+              <span>Tap to view your profile</span>
+              <br />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--NOTES-->
+    <div id="Notes">
+      <link href="./notes.css" rel="stylesheet" />
+
+      <div class="notes-container">
+        <div class="notes-notes">
+          <img
+            alt="Rectangle3643"
+            src="public/playground_assets/rectangle3643-qdq-400w.png"
+            class="notes-rectangle3"
+          />
+          <div class="notes-notes-label">
+            <span class="notes-text"><span>New Note</span></span>
+            <span class="notes-text02"><span>Saved Note 1</span></span>
+          </div>
+          <img
+            alt="Untitled13223"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/cc18c226-2a7e-4754-ab8e-7f1c49b0449e?org_if_sml=1865"
+            class="notes-untitled1"
+          />
+          <div class="notes-menubarr">
+            <a onclick="OpenHome()"><span class="homepage-text22"><span id="home">Home</span></span></a>
+            <a onclick="OpenSaved()"><span class="homepage-text24"><span id="save">Saved</span></span></a>
+            <a onclick="OpenNotes()"><span class="homepage-text26"><span id="notes">Notes</span></span></a>
+            <a onclick="OpenSettings()"><span class="homepage-text28"><span id="settings">Settings</span></span></a>
+            <img
+              alt="ProfileIcon7284"
+              src="public/playground_assets/profileicon7284-sqq-200h.png"
+              class="notes-profile-icon"
+            />
+            <span class="notes-text11">
+              <span>Hey, Kristina</span>
+              <br />
+            </span>
+            <img
+              alt="Moon7284"
+              src="public/playground_assets/moon7284-80m-200w.png"
+              class="notes-moon"
+            />
+            <span class="notes-text14">
+              <span>Tap to view your profile</span>
+              <br />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--SETTINGS-->
+    <div id="Settings">
+      <link href="./settings.css" rel="stylesheet" />
+
+      <div class="settings-container">
+        <div class="settings-settings">
+          <img
+            alt="Rectangle33223"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/9fbd905e-eb83-472f-aeed-c44ed14f5551?org_if_sml=12784"
+            class="settings-rectangle3"
+          />
+          <img
+            alt="ProfileIcon3931"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/1e3171e3-4fc2-48de-b8be-c4ae47dab1de?org_if_sml=1987"
+            class="settings-profile-icon"
+          />
+          <span class="settings-text">
+            <span>Kristina Đukić</span>
+            <br />
+          </span>
+          <div class="settings-buttons">
+            <img
+              alt="Rectangle83936"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/f78c2456-09b3-47ed-9f9d-96dc09afb6fc?org_if_sml=1702"
+              class="settings-rectangle8"
+            />
+            <img
+              alt="Rectangle93937"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/cb6b4f17-2607-4e80-be9c-741357c86efa?org_if_sml=1709"
+              class="settings-rectangle9"
+            />
+            <span class="settings-text03"><span>Log Out</span></span>
+            <span class="settings-text05"><span>View Profile</span></span>
+          </div>
+          <img
+            alt="Line23940"
+            src="public/playground_assets/line23940-d55.svg"
+            class="settings-line2"
+          />
+          <img
+            alt="Line34554"
+            src="public/playground_assets/line34554-0fwg.svg"
+            class="settings-line3"
+          />
+          <img
+            alt="Line44965"
+            src="public/playground_assets/line44965-4szw.svg"
+            class="settings-line4"
+          />
+          <span class="settings-text07"><span>Reading text size:</span></span>
+          <span class="settings-text09"><span>Listening voice:</span></span>
+          <span class="settings-text11"><span>Erase all progress:</span></span>
+          <div class="settings-options">
+            <img
+              alt="Rectangle114545"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/158c40a8-f3d0-4a23-88ea-46292fc80f19?org_if_sml=1612"
+              class="settings-rectangle11"
+            />
+            <img
+              alt="Rectangle124546"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/288afbad-e4fb-4148-91c0-099ba0a2f3ae?org_if_sml=1610"
+              class="settings-rectangle12"
+            />
+            <img
+              alt="Rectangle134547"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/1e1bb228-d6a6-4025-81ef-99675626bb1c?org_if_sml=1631"
+              class="settings-rectangle13"
+            />
+            <span class="settings-text13"><span>Small</span></span>
+            <span class="settings-text15"><span>Big</span></span>
+            <span class="settings-text17"><span>Medium</span></span>
+          </div>
+          <div class="settings-options1">
+            <img
+              alt="Rectangle114557"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/dbb06588-07b2-4496-93a6-040ca66ccc33?org_if_sml=1612"
+              class="settings-rectangle111"
+            />
+            <img
+              alt="Rectangle124558"
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/3687ca9c-87f4-49ec-8ac2-f777655c150c?org_if_sml=1627"
+              class="settings-rectangle121"
+            />
+            <span class="settings-text19"><span>Male</span></span>
+            <span class="settings-text21"><span>Female</span></span>
+          </div>
+          <img
+            alt="Rectangle144966"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/4cde680a-d381-49af-85f3-23087ca39a8f?org_if_sml=1826"
+            class="settings-rectangle14"
+          />
+          <span class="settings-text23"><span>Erase</span></span>
+          <span class="settings-email">example@gmail.com</span>
+        </div>
+        <div class="settings-menubarr">
+          <a onclick="OpenHome()"><span class="homepage-text22"><span id="home">Home</span></span></a>
+            <a onclick="OpenSaved()"><span class="homepage-text24"><span id="save">Saved</span></span></a>
+            <a onclick="OpenNotes()"><span class="homepage-text26"><span id="notes">Notes</span></span></a>
+            <a onclick="OpenSettings()"><span class="homepage-text28"><span id="settings">Settings</span></span></a>
+          <img
+            alt="ProfileIcon7284"
+            src="public/playground_assets/profileicon7284-sqq-200h.png"
+            class="settings-profile-icon1"
+          />
+          <span class="settings-text32">
+            <span>Hey, Kristina</span>
+            <br />
+          </span>
+          <img
+            alt="Moon7284"
+            src="public/playground_assets/moon7284-80m-200w.png"
+            class="settings-moon"
+          />
+          <span class="settings-text35">
+            <span>Tap to view your profile</span>
+            <br />
+          </span>
+        </div>
+      </div>
+    </div>
     
     <script>
+      
+      function OneTab(){
+        document.getElementById("Saved").style.display="none";
+        document.getElementById("Notes").style.display="none";
+        document.getElementById("Settings").style.display="none";
+      }
+
+      function OpenSaved(){
+        document.getElementById("save").style.color="rgba(0, 0, 0, 1)";
+        document.getElementById("notes").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("home").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("settings").style.color="rgba(124, 124, 124, 1)";
+
+        document.getElementById("Saved").style.display="block";
+        document.getElementById("Notes").style.display="none";
+        document.getElementById("Settings").style.display="none";
+        document.getElementById("Home").style.display="none";
+
+        
+      }
+
+      function OpenNotes(){
+        document.getElementById("save").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("notes").style.color="rgba(0, 0, 0, 1)";
+        document.getElementById("home").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("settings").style.color="rgba(124, 124, 124, 1)";
+
+        document.getElementById("Saved").style.display="none";
+        document.getElementById("Notes").style.display="block";
+        document.getElementById("Settings").style.display="none";
+        document.getElementById("Home").style.display="none";
+      }
+
+      function OpenSettings(){
+
+        document.getElementById("save").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("notes").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("home").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("settings").style.color="rgba(0, 0, 0, 1)";
+
+        document.getElementById("Saved").style.display="none";
+        document.getElementById("Notes").style.display="none";
+        document.getElementById("Settings").style.display="block";
+        document.getElementById("Home").style.display="none";
+
+        
+      }
+
+      function OpenHome(){
+
+        document.getElementById("save").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("notes").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("home").style.color="rgba(0, 0, 0, 1)";
+        document.getElementById("settings").style.color="rgba(124, 124, 124, 1)";
+        
+        document.getElementById("Saved").style.display="none";
+        document.getElementById("Notes").style.display="none";
+        document.getElementById("Settings").style.display="none";
+        document.getElementById("Home").style.display="block";
+
+      }
+
+
       const Reading = document.getElementById('Reading')
       Reading.addEventListener('click', (e) =>{
         window.open('reading-open.html', '_top')
