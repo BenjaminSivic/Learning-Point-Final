@@ -95,68 +95,28 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body onload="Time();MainText()">
     <div>
       <link href="./reading-started.css" rel="stylesheet" />
 
       <div class="reading-started-container">
         <div class="reading-started-reading-started">
           <div class="reading-started-frame1">
-            <span class="reading-started-text">
-              <span>
-                Taciti nec fames, felis enim, fermentum curabitur consequat a
-                sociosqu purus. Proin phasellus, feugiat odio ornare. Tempor
-                egestas nisi sollicitudin, convallis aenean sapien, lobortis
-                maecenas risus placerat integer quisque. Leo libero, consectetur
-                sem diam vivamus. Mattis litora accumsan auctor, fermentum est
-                velit, iaculis imperdiet etiam sed duis dui. Metus ultricies
-                torquent, felis fames, lectus urna vestibulum accumsan lacus
-                gravida ut. Inceptos elit, orci semper augue.
-              </span>
-              <br />
-              <br />
-              <span>
-                Etiam quisque nunc, gravida nullam, lorem volutpat conubia vel
-                curabitur vehicula eu. Eleifend augue, erat facilisis aptent.
-                Etiam at rutrum congue, amet mollis id, lectus dolor gravida
-                elementum ullamcorper consectetur. Aptent risus inceptos
-                pellentesque, nullam facilisis at cras nulla. Justo egestas
-                tempus laoreet, et tellus aenean, nullam auctor quisque
-                scelerisque dictum eget. Sed dictumst accumsan, consequat enim,
-                tempor orci aliquet duis sem semper. Viverra rutrum ut, class
-                porta, eleifend duis fermentum quam felis eget.
-              </span>
-              <br />
-              <br />
-              <span>
-                Ultricies libero arcu, integer ornare, aptent nulla felis tempus
-                tincidunt. Etiam netus molestie, ut placerat, pharetra porta
-                curabitur ultrices in mi class. Taciti convallis nisi, mattis
-                pretium, elementum tellus cubilia dolor leo velit. Neque
-                sociosqu, tempor cubilia imperdiet. Quis molestie fusce sodales,
-                cursus auctor pretium consequat nulla. Ultrices vitae feugiat,
-                ipsum consectetur, metus pulvinar hendrerit suscipit taciti.
-                Semper elit quisque, nam etiam, sagittis maecenas ad venenatis
-                eleifend. Congue hac elementum egestas, cubilia placerat litora,
-                praesent integer sit consequat cras class fusce non. Vulputate
-                ornare class, ipsum dictumst donec rutrum. Amet venenatis, eget
-                tortor sapien himenaeos.
-              </span>
-            </span>
+            <div>
+              <p id="MainText"></p>
           </div>
-          <span class="reading-started-text08">
-            <span>Platea Conubia</span>
+          </div>
+          <span id="Title" class="reading-started-text08">
+            <span></span>
           </span>
-          <img
-            alt="Ellipse108841"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/588b3b09-db03-499d-a135-f00978f9ee2d?org_if_sml=1655"
+          <a href="index.html">
+          <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/588b3b09-db03-499d-a135-f00978f9ee2d?org_if_sml=1655"
             class="reading-started-ellipse10"
           />
           <span class="reading-started-text10">×</span>
+          </a>
           <div class="reading-started-notes">
-            <img
-              alt="Ellipse98557"
-              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/d5ddef92-3c9c-4fe6-99f8-79c5b98e8e5e?org_if_sml=1775"
+            <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/d5ddef92-3c9c-4fe6-99f8-79c5b98e8e5e?org_if_sml=1775"
               class="reading-started-ellipse9"
             />
             <img
@@ -166,15 +126,75 @@
             />
           </div>
           <div class="reading-started-timer">
-            <span class="reading-started-text11"><span>00:00</span></span>
+            <span id="TimerMin" class="reading-started-minutes">00</span>
+            <span class="reading-started-colon">:</span>
+            <span id="TimerSec" class="reading-started-seconds">00</span>
           </div>
           <a href="quiz.html">
           <div class="reading-started-finish">
-            <span class="reading-started-text13"><span>Done</span></span>
+            <button class="reading-started-text13">Done</button>
           </div>
           </a>
         </div>
       </div>
     </div>
+
+    <script>
+      let historyEasyText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      let historyMediumText="";
+      let historyHardText="";
+      let physicsEasyText="";
+      let physicsMediumText="";
+      let physicsHardText="";
+      let geographyEasyText="";
+      let geographyMediumText="";
+      let geographyHardText="";
+      let informaticsEasyText="";
+      let informaticsMediumText="";
+      let informaticsHardText="";
+      let musicEasyText="";
+      let musicMediumText="";
+      let musicHardText="";
+      let biologyEasyText="";
+      let biologyMediumText="";
+      let biologyHardText="";
+      let literatureEasyText="";
+      let literatureMediumText="";
+      let literatureHardText="";
+      let artEasyText="";
+      let artMediumText="";
+      let artHardText="";
+      let chemistryEasyText="";
+      let chemistryMediumText="";
+      let chemistryHardText="";
+      
+      function MainText(){
+        document.getElementById('Title').innerText="History";
+        document.getElementById('MainText').innerText=historyEasyText }
+
+
+      var timer;
+      var seconds=document.getElementById('TimerSec');
+      var minutes=document.getElementById('TimerMin');
+      var sec=1;
+      var min=0;
+      function Time(){
+        timer=setInterval(()=>{
+          if(sec>=10){
+            seconds.innerHTML=sec;
+          }else{
+          seconds.innerHTML= '0'+sec;
+          }
+          sec++;
+          
+          if(sec>60){
+            sec=0;
+            min++;
+            seconds.innerHTML='0'+sec;
+            minutes.innerHTML='0'+min;
+          }
+        },1000)
+      }
+    </script>
   </body>
 </html>
