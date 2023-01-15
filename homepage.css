@@ -1,3 +1,50 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(./fonts/Satoshi-Medium.ttf);
+}
+
+.button-answer-cont{
+  width: 60%;
+  height: 25%;
+  top:50%;
+  left: 20%;
+  position: absolute;
+  border: 0;
+  border-radius: 50px;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: #F0F0F0;
+  color: #929292;
+}
+.container {
+  height: 40%;
+  width: 90%;
+  top:25%;
+  position: absolute;
+  margin: 1rem;
+  padding: 3rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: #ffffff;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+}
+
+.form__input:focus {
+  
+  background: #ffffff;
+}
+
 .homepage-container {
   min-height: 100vh;
 }

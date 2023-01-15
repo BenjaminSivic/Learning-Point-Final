@@ -251,8 +251,8 @@
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/1e3171e3-4fc2-48de-b8be-c4ae47dab1de?org_if_sml=1987"
             class="settings-profile-icon"
           />
-          <span class="settings-text">
-            <span>Kristina Đukić</span>
+          <span id="UserSettings" class="settings-text">
+            <span></span>
             <br />
           </span>
           <div class="settings-buttons">
@@ -334,7 +334,7 @@
     </div>
     
     <!--MENUBAR-->
-    <div class="homepage-menubarr">
+    <div id="Menubar" class="homepage-menubarr">
       <a onclick="OpenHome()"><span class="homepage-text22"><span id="home">Home</span></span></a>
       <a onclick="OpenSaved()"><span class="homepage-text24"><span id="save">Saved</span></span></a>
       <a onclick="OpenNotes()"><span class="homepage-text26"><span id="notes">Notes</span></span></a>
@@ -344,8 +344,8 @@
         src="public/playground_assets/profileicon7284-sqq-200h.png"
         class="homepage-profile-icon"
       />
-      <span class="homepage-text29">
-        <span>Hey, Kristina</span>
+      <span id="User" class="homepage-text29">
+        <span></span>
         <br />
       </span>
       <img
@@ -358,6 +358,17 @@
         <br />
       </span>
     </div>
+
+    <!--LOGIN-->
+    <div id="Login" class="container">
+      
+          <h1 class="form__title">Login</h1>
+          <div class="form__input-group">
+              <input type="text" class="form__input" autofocus placeholder="Desired Username">
+          </div>
+          <button class="button-answer-cont" onclick="Continue()">Continue</button>
+      
+   </div>
 
     <!--READING OPEN-->
     <div id="ReadingOpen">
@@ -465,6 +476,13 @@
     </div>
 
     <script>
+
+      function Continue(){
+        document.getElementById("Home").style.visibility="visible";
+        document.getElementById("Menubar").style.visibility="visible";
+        document.getElementById("Login").style.display="none";
+      }
+
       var topic=1;
       var difficulty=1;
 
@@ -472,7 +490,9 @@
         document.getElementById("Saved").style.display="none";
         document.getElementById("Notes").style.display="none";
         document.getElementById("Settings").style.display="none";
-        document.getElementById("ReadingOpen").style.display="none"
+        document.getElementById("ReadingOpen").style.display="none";
+        document.getElementById("Home").style.visibility="hidden";
+        document.getElementById("Menubar").style.visibility="hidden";
       }
 
       function OpenSaved(){
