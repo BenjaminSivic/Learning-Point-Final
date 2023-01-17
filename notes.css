@@ -4,7 +4,8 @@
 }
 
 .input-field{
-  border: 0;
+  border: 2px solid transparent;
+  outline: none;
   background-color: transparent;
   color:black;
   left:12%;

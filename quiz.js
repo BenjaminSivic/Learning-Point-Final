@@ -91,39 +91,39 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'What is the capital of Spain',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false },
-      { text: '12', correct: false },
-      { text: '3', correct: false }
+      { text: 'Madrid', correct: true },
+      { text: 'Barcelona', correct: false },
+      { text: 'Paris', correct: false },
+      { text: 'Montreal', correct: false }
     ]
   },
   {
-    question: 'What ball is orange?',
+    question: 'Which famous football club is located in Catalonia?',
     answers: [
-      { text: 'Basketball', correct: true },
-      { text: 'Football', correct: false },
-      { text: 'Tennis Ball', correct: false },
-      { text: 'Bowling Ball', correct: false }
+      { text: 'FC Barcelona', correct: true },
+      { text: 'Sporting', correct: false },
+      { text: 'Real Madrid', correct: false },
+      { text: 'Fiorentina', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'Which of the following does not neighbour Spain?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Portugal', correct: false },
+      { text: 'Germany', correct: true },
+      { text: 'France', correct: false },
+      { text: 'Morroco', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'What is the capital of Portugal?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true },
-      { text: '12', correct: false },
-      { text: '7', correct: false }
+      { text: 'London', correct: false },
+      { text: 'Lisbon', correct: true },
+      { text: 'Paris', correct: false },
+      { text: 'Berlin', correct: false }
     ]
   }
 ]
