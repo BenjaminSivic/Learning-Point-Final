@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(./fonts/Satoshi-Medium.ttf);
+}
+
 .input-field{
   border: 0;
   background-color: transparent;

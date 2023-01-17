@@ -1,5 +1,71 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(./fonts/Satoshi-Medium.ttf);
+}
 
-
+.button-erase{
+  width: 100%;
+  height: 95%;
+  border: 0;
+  border-radius: 50px;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #FD9191;
+  color: white;
+}
+.button-voice:hover{
+  background-color: #B0A4FF;
+  color:white;
+}
+.button-voice{
+  width: 100%;
+  height: 95%;
+  border: 0;
+  border-radius: 50px;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #F0F0F0;
+  color: #929292;
+}
+.button-size{
+  width: 100%;
+  height: 95%;
+  border: 0;
+  border-radius: 50px;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #F0F0F0;
+  color: #929292;
+}
+.button-size:hover{
+  background-color: #B0A4FF;
+  color:white;
+}
+.button-log{
+    width: 90%;
+    height: 95%;
+    border: 0;
+    border-radius: 50px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #FD9191;
+    color: white;
+}
+.button-profile{
+    width: 90%;
+    height: 95%;
+    border: 0;
+    border-radius: 50px;
+    font-family: Satoshi;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #B0A4FF;
+    color: white;
+}
 .settings-container {
   width: 100%;
   display: flex;
@@ -38,7 +104,7 @@
   border-color: transparent;
 }
 .settings-text {
-  top: 224.99993896484375px;
+  top: 28%;
   left: 150.99996948242188px;
   color: rgba(0, 0, 0, 1);
   width: 181px;
@@ -57,6 +123,7 @@
   text-decoration: none;
 }
 .settings-buttons {
+  gap:25px;
   top: 307.00006103515625px;
   left: 76.99992370605469px;
   width: 229px;
@@ -208,7 +275,8 @@
   text-decoration: none;
 }
 .settings-options {
-  top: 446.0000305175781px;
+  gap: 20px;
+  top: 56%;
   left: 82.99996948242188px;
   width: 223.00001525878906px;
   height: 32.99999237060547px;
@@ -229,6 +297,31 @@
   justify-content: flex-start;
   background-color: transparent;
 }
+
+.settings-options2 {
+  gap: 20px;
+  top: 86%;
+  left: 35%;
+  width: 30%;
+  height: 5%;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-right: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+
 .settings-rectangle11 {
   top: 0px;
   left: 0px;
@@ -305,7 +398,8 @@
   text-decoration: none;
 }
 .settings-options1 {
-  top: 585.9998168945312px;
+  gap:20px;
+  top: 73%;
   left: 113px;
   width: 166.99998474121094px;
   height: 33.00020980834961px;
