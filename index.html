@@ -277,8 +277,8 @@
             <button id="large" class="button-size">Large</button>
           </div>
           <div class="settings-options1">
-          <button id="male" class="button-voice">Male</button>
-          <button id="female" class="button-voice">Female</button>
+          <button onclick="VoiceMale()" id="male" class="button-voice">Male</button>
+          <button onclick="VoiceFemale()" id="female" class="button-voice">Female</button>
           </div>
           <div class="settings-options2">
             <button id="erase" class="button-erase">Erase</button>
@@ -294,6 +294,7 @@
       <a onclick="OpenSaved()"><span class="homepage-text24"><span id="save">Saved</span></span></a>
       <a onclick="OpenNotes()"><span class="homepage-text26"><span id="notes">Notes</span></span></a>
       <a onclick="OpenSettings()"><span class="homepage-text28"><span id="settings">Settings</span></span></a>
+      <a href="profile.html"><div>
       <img
         alt="ProfileIcon7284"
         src="public/playground_assets/profileicon7284-sqq-200h.png"
@@ -312,6 +313,8 @@
         <span>Tap to view your profile</span>
         <br />
       </span>
+      </div>
+      </a>
     </div>
 
     <!--LOGIN-->
@@ -435,8 +438,9 @@
 
     <!--SCRIPTS-->
     <script>
-      let logged=0;;
+      let logged=0;
       let username;
+      let voice=0;
 
      
       function Continue(){
@@ -444,7 +448,7 @@
         logged=1;
         localStorage.setItem("Logged",logged);
         localStorage.setItem("Username",username);
-        document.getElementById("UserSettings").innerHTML =username;
+        document.getElementById("UserSettings").innerHTML=username;
         document.getElementById("User").innerHTML="Hey, "+username;
         document.getElementById("Home").style.visibility="visible";
         document.getElementById("Menubar").style.visibility="visible";
@@ -457,11 +461,20 @@
         location.reload();
       }
 
+      function VoiceFemale(){
+        voice=0;
+        localStorage.setItem("Voice", voice)
+      }
+      function VoiceMale(){
+        voice=1;
+        localStorage.setItem("Voice", voice)
+      }
+
       var topic=1;
       var difficulty=1;
 
       function OneTab(){
-      
+        
         document.getElementById("Saved").style.display="none";
         document.getElementById("Notes").style.display="none";
         document.getElementById("Settings").style.display="none";
@@ -474,7 +487,7 @@
           document.getElementById("Menubar").style.visibility="visible";
           document.getElementById("Login").style.display="none";
           document.getElementById("User").innerHTML="Hey, "+localStorage.getItem("Username");
-
+          document.getElementById("UserSettings").innerHTML=localStorage.getItem("Username");
         }
       }
 

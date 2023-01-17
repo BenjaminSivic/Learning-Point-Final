@@ -95,15 +95,15 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body onload="LoadStats()">
     <div>
       <link href="./profile.css" rel="stylesheet" />
 
       <div class="profile-container">
         <div class="profile-profile">
           <div class="profile-hey-kristina">
-            <span class="profile-text">
-              <span>Kristina Đukić</span>
+            <span id="User" class="profile-text">
+              <span></span>
               <br />
             </span>
             <img
@@ -111,45 +111,40 @@
               src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/bda7ad11-3a95-4db5-aea5-c361cf500840?org_if_sml=11920"
               class="profile-profile-icon"
             />
-            <span class="profile-email">example@gmail.com</span>
+            
           </div>
           <img
             alt="Moon6850"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/b945c7db-5865-4cd6-a773-b8e6632020cb?org_if_sml=1839"
             class="profile-moon"
           />
-          <img
-            alt="Rectangle216850"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/f75e7d66-135f-4f09-9102-9b06de725ea7?org_if_sml=11456"
-            class="profile-rectangle21"
-          />
-          <img
-            alt="Rectangle236850"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/c7fb41df-e8bc-4a54-8504-c7e61e8fa18a?org_if_sml=11563"
-            class="profile-rectangle23"
-          />
-          <img
-            alt="Rectangle246850"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/793bf49b-2c47-45f9-82b3-bc60dbd4f3bd?org_if_sml=11416"
-            class="profile-rectangle24"
-          />
-          <img
-            alt="Rectangle256851"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/8f94b8c0-5a3f-405b-bdfa-2fbed8fcc25e?org_if_sml=11416"
-            class="profile-rectangle25"
-          />
-          <img
-            alt="Rectangle226850"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/3a263270-2bde-4fad-87e0-166ce1af0d50?org_if_sml=11456"
-            class="profile-rectangle22"
-          />
-          <img
-            alt="back18552"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/76b7f36a-1c3b-4690-ba24-5b906602e048?org_if_sml=1324"
+          
+          <a href="index.html">
+          <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/76b7f36a-1c3b-4690-ba24-5b906602e048?org_if_sml=1324"
             class="profile-back1"
           />
+          </a>
+        </div>
+        <div id="stats" class="stat-grid">
+          <div class="stats1">
+            <span id="TimeRead" class="Time">Time Read:</span>
+          </div>
+          <div class="stats2">
+            <span id="TimeListen" class="Listen">Time Listened:</span>
+          </div>
+          <div class="stats3">
+            <span class="Achievements">Achievements:</span>
+          </div>
+          <div class="stats4"></div>
+          <div class="stats5"></div>
         </div>
       </div>
     </div>
+
+    <script>
+      function LoadStats(){
+        document.getElementById("User").innerHTML=localStorage.getItem("Username");
+      }
+    </script>
   </body>
 </html>
