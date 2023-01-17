@@ -214,11 +214,11 @@
 
       <div class="notes-container">
         <div class="notes-notes">
-          <a onclick="AddNote()">
+          
           <img src="public/playground_assets/rectangle3643-qdq-400w.png"
             class="notes-rectangle3"
           />
-          </a>
+          
           <textarea id="note" class="input-field" type="text"></textarea>
           <div class="notes-notes-label">
             <a onclick="NewNote()">
@@ -228,11 +228,11 @@
             <span id="sNote" class="notes-text02"><span>Saved Note 1</span></span>
             </a>
           </div>
-          <img
-            alt="Untitled13223"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/cc18c226-2a7e-4754-ab8e-7f1c49b0449e?org_if_sml=1865"
+          <a onclick="AddNote()">
+          <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/cc18c226-2a7e-4754-ab8e-7f1c49b0449e?org_if_sml=1865"
             class="notes-untitled1"
           />
+          </a>
           
         </div>
       </div>
@@ -251,11 +251,13 @@
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/9fbd905e-eb83-472f-aeed-c44ed14f5551?org_if_sml=12784"
             class="settings-rectangle3"
           />
+
           <img
             alt="ProfileIcon3931"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/1e3171e3-4fc2-48de-b8be-c4ae47dab1de?org_if_sml=1987"
             class="settings-profile-icon"
           />
+
           <span id="UserSettings" class="settings-text">
             <span></span>
             <br />
@@ -492,6 +494,7 @@
         logged=1;
         localStorage.setItem("Logged",logged);
         localStorage.setItem("Username",username);
+        document.getElementById("UserSettings").innerHTML =username;
         document.getElementById("User").innerHTML="Hey, "+username;
         document.getElementById("Home").style.visibility="visible";
         document.getElementById("Menubar").style.visibility="visible";
