@@ -133,7 +133,7 @@
             <span class="reading-started-colon">:</span>
             <span id="TimerSec" class="reading-started-seconds">00</span>
           </div>
-          <a href="quiz.html">
+          <a onclick="OpenQuiz()">
           <div class="reading-started-finish">
             <button class="reading-started-text13">Done</button>
           </div>
@@ -169,6 +169,12 @@
     
 
     <script>
+      function OpenQuiz(){
+        localStorage.setItem("Minutes",min);
+        localStorage.setItem("Seconds", sec)
+        window.open("./quiz.html", "_top")
+      }
+
       function ShowWords(){
         document.getElementById("UnkownContainer").style.opacity = 100;
       }
@@ -181,7 +187,7 @@
       let historyHardText="History hard";
       let physicsEasyText="PH easy";
       let physicsMediumText="PH med";
-      let physicsHardText="PH hard";
+      let physicsHardText="Quantum mechanics, a subdiscipline of physics, delves into the realm of the infinitesimally small, examining the behavior of matter and energy at the atomic and subatomic level. The fundamental principles of quantum mechanics have led to many revolutionary discoveries and technological advancements in various fields. One of the most striking features of quantum mechanics is the concept of wave-particle duality, which posits that particles, such as electrons, possess both wave-like and particle-like characteristics. This is in stark contrast to classical mechanics, which describes particles as having definite positions and velocities. Another crucial concept in quantum mechanics is the Heisenberg uncertainty principle, which states that the precise position and momentum of a particle cannot both be known simultaneously with perfect accuracy. This has far-reaching implications for our understanding of the behavior of matter at the atomic scale. Quantum mechanics also explores the concept of superposition, which asserts that a particle can exist in multiple states or positions simultaneously. This principle is the foundation of quantum computing, which utilizes the principles of superposition and entanglement to perform calculations much faster than traditional computers.One of the most intriguing discoveries of quantum mechanics is the concept of quantum entanglement, wherein two particles become inextricably linked, such that the state of one particle can affect the state of the other, even when separated by vast distances. This has led to the development of quantum cryptography, which leverages the principles of entanglement to create unbreakable codes.In sum, quantum mechanics is a discipline of science that has led to numerous groundbreaking discoveries and technological advancements. It has fundamentally altered our understanding of the behavior of matter and energy at the atomic and subatomic level, and it holds immense potential for future research and development.";
       let geographyEasyText="geo ez";
       let geographyMediumText="geo mid";
       let geographyHardText="geo hard";
@@ -190,7 +196,7 @@
       let informaticsHardText="inf hard";
       let musicEasyText="music ez";
       let musicMediumText="music mid";
-      let musicHardText="music hard";
+      let musicHardText="It is a well-acknowledged fact that music, as an art form, holds a significant place in human culture. It is a medium that can transcend linguistic barriers and foster a sense of communal unity, while also serving as a means of self-expression and emotional catharsis. However, despite its ubiquity and apparent simplicity, music is a highly complex and nuanced phenomenon that encompasses various disciplines such as acoustics, music theory, ethnomusicology, and music psychology. The emotional power of music, which is a well-established phenomenon, can be attributed to its ability to activate specific regions of the brain associated with emotion, memory, and cognition. Research has shown that different types of music can elicit different emotional responses, from feelings of joy and happiness to sadness and melancholy. The emotional power of music can be harnessed for therapeutic purposes, as music therapy has been found to be effective in treating conditions such as depression, anxiety, and PTSD.Music, as an art form, also reflects the cultural and historical context in which it was created. It serves as a powerful means of social commentary and protest, reflecting the social and political conditions of a particular time and place. Throughout history, music has been used as a means of expressing dissent and resistance and has played an important role in social movements and political revolutions.The invention of notation was a crucial development in the history of music, as it made it possible to transcribe and preserve music for future generations. Notation allows musicians to read and perform music written by composers from different eras and cultures, making it possible to appreciate the music of the past and learn from it. The advent of new technologies has also had a profound impact on music. The phonograph, for example, made it possible to record and reproduce music, revolutionizing the music industry. The development of electronic instruments such as the synthesizer has also had a major impact on the way music is created and performed. The technicalities of acoustics, the abstract theories of music theory, the cultural significance studied in ethnomusicology, and the psychological and physiological processes examined in music psychology, all contribute to a deeper understanding and appreciation of music. Additionally, the emotional power of music, as well as its therapeutic benefits, are not to be underestimated. Music can evoke a plethora of emotions, and its ability to activate specific regions of the brain associated with emotion and memory make it a powerful tool for emotional catharsis and therapy. Furthermore, music reflects the cultural and historical context in which it was created and serves as a powerful means of social commentary and protest. The study of music's role in different societies, cultures, and historical periods is crucial for understanding its significance and impact on human civilization.  The invention of notation, as well as the advent of new technologies, has also had a significant impact on music. Notation allows for the preservation of music for future generations, while new technologies have revolutionized the way music is recorded, produced, and distributed.In summary, music is a complex and multi-faceted phenomenon that encompasses various disciplines and holds a significant place in human culture. Its emotional power, therapeutic benefits, cultural and historical significance, and its evolution through technology all contribute to its importance and relevance in today's society.";
       let biologyEasyText="bio ez";
       let biologyMediumText="bio mid";
       let biologyHardText="bio hard";

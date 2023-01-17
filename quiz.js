@@ -91,39 +91,39 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is the capital of Spain',
+    question: 'What is the Heisenberg uncertainty principle?',
     answers: [
-      { text: 'Madrid', correct: true },
-      { text: 'Barcelona', correct: false },
-      { text: 'Paris', correct: false },
-      { text: 'Montreal', correct: false }
+      { text: 'Position and velocity cannot be known simultaneously.', correct: true },
+      { text: 'Particles can exist in multiple positions simultaneously.', correct: false },
+      { text: 'The principle of wave-particle duality', correct: false },
+      { text: 'The principle of quantum entanglement', correct: false }
     ]
   },
   {
-    question: 'Which famous football club is located in Catalonia?',
+    question: 'What is the concept of superposition?',
     answers: [
-      { text: 'FC Barcelona', correct: true },
-      { text: 'Sporting', correct: false },
-      { text: 'Real Madrid', correct: false },
-      { text: 'Fiorentina', correct: false }
+      { text: 'A particle can exist in multiple states or positions simultaneously.', correct: true },
+      { text: 'The precise position and momentum of a particle cannot both be known simultaneously.', correct: false },
+      { text: 'Two particles become inextricably linked', correct: false },
+      { text: 'The principle of wave-particle duality', correct: false }
     ]
   },
   {
-    question: 'Which of the following does not neighbour Spain?',
+    question: 'Which concept is the foundation of quantum computing?',
     answers: [
-      { text: 'Portugal', correct: false },
-      { text: 'Germany', correct: true },
-      { text: 'France', correct: false },
-      { text: 'Morroco', correct: false }
+      { text: 'The Heisenberg uncertainty principle', correct: false },
+      { text: 'The concept of superposition', correct: true },
+      { text: 'The principle of quantum entanglement', correct: false },
+      { text: 'Wave-particle duality', correct: false }
     ]
   },
   {
-    question: 'What is the capital of Portugal?',
+    question: 'What is the main application of quantum entanglement?',
     answers: [
-      { text: 'London', correct: false },
-      { text: 'Lisbon', correct: true },
-      { text: 'Paris', correct: false },
-      { text: 'Berlin', correct: false }
+      { text: 'Quantum computing', correct: false },
+      { text: 'Quantum cryptography', correct: false },
+      { text: 'The creation of unbreakable codes', correct: false },
+      { text: ' All of the above', correct: true }
     ]
   }
 ]

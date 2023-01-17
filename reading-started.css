@@ -33,6 +33,7 @@
   align-items: flex-start;
   flex-shrink: 0;
   border-color: transparent;
+  overflow-y:scroll
 }
 .reading-started-text {
   color: rgba(0, 0, 0, 1);
@@ -245,7 +246,7 @@
 @media(max-width: 479px) {
   .reading-started-frame1 {
     height: 589px;
-    overflow-y:scroll ;
+    overflow-y:scroll;
   }
   .reading-started-text {
     color: rgb(0, 0, 0);

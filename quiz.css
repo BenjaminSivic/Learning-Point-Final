@@ -11,7 +11,7 @@
     width: 86%;
     height: auto;
     position: absolute;
-    font-size: 36px;
+    font-size: 24px;
     align-self: auto;
     font-style: Semi Bold;
     text-align: center;
@@ -46,7 +46,7 @@
     border-radius: 50px;
     font-family: Satoshi;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     background-color: #F0F0F0;
     color: #929292;
 }

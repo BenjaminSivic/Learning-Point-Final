@@ -127,16 +127,24 @@
         </div>
         <div id="stats" class="stat-grid">
           <div class="stats1">
-            <span id="TimeRead" class="Time">Time Read:</span>
+            <span class="Time">Time Read:</span>
+            <span id="TimeRead" class="read"></span>
           </div>
           <div class="stats2">
-            <span id="TimeListen" class="Listen">Time Listened:</span>
+            <span class="Listen">Time Listened:</span>
+            <span id="TimeListen" class="read"></span>
           </div>
           <div class="stats3">
             <span class="Achievements">Achievements:</span>
           </div>
-          <div class="stats4"></div>
-          <div class="stats5"></div>
+          <div class="stats4">
+            <span class="quiz">Quizzes Done:</span>
+            <span id="quiz" class="quizNum">0</span>
+          </div>
+          <div class="stats5">
+            <span class="answers">Correct Answers:</span>
+            <span id="answer" class="answerNum">0</span>
+          </div>
         </div>
       </div>
     </div>
@@ -144,6 +152,31 @@
     <script>
       function LoadStats(){
         document.getElementById("User").innerHTML=localStorage.getItem("Username");
+        sec=localStorage.getItem("Seconds");
+        min=localStorage.getItem("Minutes");
+        if(sec==null){
+          sec=0;
+        }
+        if(min==null){
+          min=0;
+        }
+        if(sec<=10){
+          sec='0'+sec;
+        }
+        document.getElementById("TimeRead").innerHTML="0"+min+":"+sec;
+
+        secL=localStorage.getItem("SecondsListened");
+        minL=localStorage.getItem("MinutesListened");
+        if(secL==null){
+          secL=0;
+        }
+        if(minL==null){
+          minL=0;
+        }
+        if(secL<=10){
+          secL='0'+secL;
+        }
+        document.getElementById("TimeListen").innerHTML="0"+minL+":"+secL;
       }
     </script>
   </body>

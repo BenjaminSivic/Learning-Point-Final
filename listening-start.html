@@ -175,8 +175,14 @@
                 }
               },1000)
             }
+
+            function OpenQuiz(){
+        localStorage.setItem("MinutesListened", min);
+        localStorage.setItem("SecondsListened", sec)
+        window.open("./quiz.html", "_top")
+      }
           </script>
-          <a href="quiz.html">
+          <a onclick="OpenQuiz()">
           <div class="listening-start-finish">
             <span class="listening-start-text02"><span>Done</span></span>
           </div>

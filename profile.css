@@ -2,6 +2,51 @@
   font-family: Satoshi;
   src: url(./fonts/Satoshi-Medium.ttf);
 }
+.answerNum{
+  top:25%;
+  left: 42%;
+  position:relative;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 24px;
+  color:rgba(124, 124, 124, 1);
+}
+.answers{
+  top:12%;
+  left: 4%;
+  position:relative;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 18px;
+  color:rgba(124, 124, 124, 1);
+}
+.quizNum{
+  top:40%;
+  right: 37%;
+  position: relative;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 24px;
+  color:rgba(124, 124, 124, 1);
+}
+.quiz{
+  top:7%;
+  left:12%;
+  position: relative;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 18px;
+  color:rgba(124, 124, 124, 1);
+}
+.read{
+  top:25%;
+  left:25%;
+  position: relative;
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 24px;
+  color:rgba(124, 124, 124, 1);
+}
 .Listen{
   top:7%;
   left:12%;
