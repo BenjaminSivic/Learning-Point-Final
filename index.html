@@ -476,9 +476,13 @@
     </div>
 
     <script>
+      let logged=0;;
       let username;
       function Continue(){
         username=document.getElementById("user").value;
+        logged=1;
+        localStorage.setItem("Logged",logged);
+        localStorage.setItem("Username",username);
         document.getElementById("User").innerHTML="Hey, "+username;
         document.getElementById("Home").style.visibility="visible";
         document.getElementById("Menubar").style.visibility="visible";
@@ -493,8 +497,16 @@
         document.getElementById("Notes").style.display="none";
         document.getElementById("Settings").style.display="none";
         document.getElementById("ReadingOpen").style.display="none";
+        if(localStorage.getItem("Logged")!=1){
         document.getElementById("Home").style.visibility="hidden";
         document.getElementById("Menubar").style.visibility="hidden";
+        }else{
+          document.getElementById("Home").style.visibility="visible";
+          document.getElementById("Menubar").style.visibility="visible";
+          document.getElementById("Login").style.display="none";
+          document.getElementById("User").innerHTML="Hey, "+localStorage.getItem("Username");
+
+        }
       }
 
       function OpenSaved(){
