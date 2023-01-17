@@ -95,7 +95,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body onload="setAudio()">
     <div>
       <link href="./listening-start.css" rel="stylesheet" />
 
@@ -146,6 +146,13 @@
           
 
           <script>
+
+            function setAudio(){
+              console.log("Its working")
+            }
+            
+
+
             var timer;
             var seconds=document.getElementById('TimerSec');
             var minutes=document.getElementById('TimerMin');

@@ -214,14 +214,19 @@
 
       <div class="notes-container">
         <div class="notes-notes">
-          <img
-            alt="Rectangle3643"
-            src="public/playground_assets/rectangle3643-qdq-400w.png"
+          <a onclick="AddNote()">
+          <img src="public/playground_assets/rectangle3643-qdq-400w.png"
             class="notes-rectangle3"
           />
+          </a>
+          <textarea id="note" class="input-field" type="text"></textarea>
           <div class="notes-notes-label">
-            <span class="notes-text"><span>New Note</span></span>
-            <span class="notes-text02"><span>Saved Note 1</span></span>
+            <a onclick="NewNote()">
+            <span id="newNote" class="notes-text"><span>New Note</span></span>
+            </a>
+            <a onclick="SavedNote()">
+            <span id="sNote" class="notes-text02"><span>Saved Note 1</span></span>
+            </a>
           </div>
           <img
             alt="Untitled13223"
@@ -475,6 +480,10 @@
       </div>
     </div>
 
+
+   
+
+    <!--SCRIPTS-->
     <script>
       let logged=0;;
       let username;
@@ -493,6 +502,7 @@
       var difficulty=1;
 
       function OneTab(){
+      
         document.getElementById("Saved").style.display="none";
         document.getElementById("Notes").style.display="none";
         document.getElementById("Settings").style.display="none";
@@ -574,7 +584,7 @@
       
       const Listening = document.getElementById('Listening')
       Listening.addEventListener('click', (e) =>{
-        window.open('listening-start.html', '_top')
+        window.open('listening-open.html', '_top')
       })
 
       const Dictionary = document.getElementById('Dictionary')
@@ -848,6 +858,24 @@
         localStorage.setItem("Topic", topic);
         localStorage.setItem("Difficulty", difficulty);
         window.open('reading-started.html', '_top')
+      }
+
+      function AddNote(){
+        let content=document.getElementById("note").value;
+        localStorage.setItem("SavedNote",content);
+      }
+
+      function NewNote(){
+        document.getElementById("note").value="";
+        document.getElementById("sNote").style.color="rgba(124, 124, 124, 1)";
+        document.getElementById("newNote").style.color="black"
+      }
+
+      function SavedNote(){
+        let content=localStorage.getItem("SavedNote");
+        document.getElementById("note").value=content;
+        document.getElementById("sNote").style.color="black";
+        document.getElementById("newNote").style.color="rgba(124, 124, 124, 1)"
       }
     </script>
 

@@ -1,3 +1,13 @@
+.input-field{
+  border: 0;
+  background-color: transparent;
+  color:black;
+  left:12%;
+  top:26%;
+  position: absolute;
+  width: 76%;
+  height:64%;
+}
 .notes-container {
   width: 100%;
   display: flex;
@@ -49,14 +59,14 @@
   background-color: transparent;
 }
 .notes-text {
-  color: rgba(124, 124, 124, 1);
+  color: rgba(0, 0, 0, 1);
   width: 89px;
   height: auto;
   position: absolute;
   font-size: 16px;
   align-self: auto;
   font-style: Bold;
-  text-align: left;
+
   font-family: Satoshi;
   font-weight: 700;
   line-height: normal;
@@ -65,8 +75,8 @@
 }
 .notes-text02 {
   top: 0.399993896484375px;
-  left: 95px;
-  color: rgba(0, 0, 0, 1);
+  left: 85px;
+  color: rgba(124, 124, 124, 1); 
   width: 120px;
   height: auto;
   position: absolute;
