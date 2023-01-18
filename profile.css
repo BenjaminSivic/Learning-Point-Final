@@ -2,6 +2,23 @@
   font-family: Satoshi;
   src: url(./fonts/Satoshi-Medium.ttf);
 }
+
+.quizA{
+  z-index: 1000;
+  width: 19%;
+  height: 8%;
+  left:30.5%;
+  top:62%;
+  position: absolute;
+}
+.readA{
+  z-index: 1000;
+  width: 18.5%;
+  height: 7.5%;
+  left:50.5%;
+  top:62%;
+  position: absolute;
+}
 .answerNum{
   top:25%;
   left: 42%;

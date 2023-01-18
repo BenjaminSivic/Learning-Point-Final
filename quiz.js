@@ -9,11 +9,14 @@ const question=document.getElementById('question')
 let questions;
 var count=1;
 var correctAnswers=0;
+let quizzes=0;
 let shuffledQuestions, currentQuestionIndex
 
 
 finish.addEventListener('click',()=>{
     localStorage.setItem("answeredQs", correctAnswers);
+    quizzes++;
+    localStorage.setItem("CompletedQuizzes", quizzes);
 })
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
@@ -463,11 +466,47 @@ function SetTopic(){
   }
   }
   if(topic==2){
-
   }
 
   if(topic==3){
-
+    questions = [
+      {
+        question: 'When were the first modern Olympic Games held?',
+        answers: [
+          { text: '1896', correct: true },
+          { text: '1896', correct: false },
+          { text: '2000', correct: false },
+          { text: '776 BC', correct: false }
+        ]
+      },
+      {
+        question: 'What is the International Olympic Committee (IOC)?',
+        answers: [
+          { text: 'A group of representatives from different countries who work together to plan and organize the Olympics.', correct: true },
+          { text: 'A group of athletes who compete in the Olympics', correct: false },
+          { text: 'A group of sports commentators who provide analysis during the Olympics', correct: false },
+          { text: 'A group of sponsors who provide funding for the Olympics', correct: false }
+        ]
+      },
+      {
+        question: 'What are the three medal types given in the Olympics?',
+        answers: [
+          { text: 'Diamond, Platinum, Gold', correct: false },
+          { text: 'Gold, Silver, Bronze', correct: true },
+          { text: 'Gold, Silver, Copper', correct: false },
+          { text: 'Platinum, Gold, Silver', correct: false }
+        ]
+      },
+      {
+        question: 'Why were the Olympics cancelled in 1916, 1940 and 1944?',
+        answers: [
+          { text: 'Lack of funding', correct: false },
+          { text: 'Political issues', correct: false },
+          { text: 'Disagreements between countries', correct: false },
+          { text: 'Due to World War I and II', correct: true }
+        ]
+      }
+    ]  
   }
 
   if(topic==4){
@@ -518,6 +557,125 @@ function SetTopic(){
   }
 
   if(topic==6){
-    
+    if(diff==1){
+    questions = [
+      {
+        question: 'Who were the two opposing military alliances in World War II?',
+        answers: [
+          { text: 'Axis and Allies', correct: true },
+          { text: 'Axis and Axis', correct: false },
+          { text: 'Allies and Allies', correct: false },
+          { text: 'None of the stated', correct: false }
+        ]
+      },
+      {
+        question: 'What was the first war in which airplanes played a major role?',
+        answers: [
+          { text: 'World War II', correct: true },
+          { text: 'World War I', correct: false },
+          { text: 'Korean War', correct: false },
+          { text: 'Vietnam War', correct: false }
+        ]
+      },
+      {
+        question: 'Who was the leader of Germany during World War II?',
+        answers: [
+          { text: 'Adolf Hitler', correct: false },
+          { text: 'Joseph Stalin', correct: true },
+          { text: 'Franklin D. Roosevelt', correct: false },
+          { text: 'Winston Churchill', correct: false }
+        ]
+      },
+      {
+        question: 'What was the major turning point of the war on the Eastern Front?',
+        answers: [
+          { text: 'Atomic bombing of Hiroshima', correct: false },
+          { text: 'D-Day landing', correct: false },
+          { text: 'Normandy invasion', correct: false },
+          { text: 'Battle of Stalingrad', correct: true }
+        ]
+      }
+    ]  
+  }
+  if(diff==2){
+    questions = [
+      {
+        question: 'What was the cause of the Chernobyl disaster?',
+        answers: [
+          { text: 'All of the stated', correct: true },
+          { text: 'A failed safety test', correct: false },
+          { text: 'Operator negligence', correct: false },
+          { text: 'A design defect in the reactor', correct: false }
+        ]
+      },
+      {
+        question: 'How many plant workers died instantly in the immediate aftermath of the disaster?',
+        answers: [
+          { text: '2', correct: true },
+          { text: '28', correct: false },
+          { text: '115.000', correct: false },
+          { text: 'None', correct: false }
+        ]
+      },
+      {
+        question: 'How many people were evacuated from the contaminated area in the days and weeks following the accident?',
+        answers: [
+          { text: '115.000', correct: true },
+          { text: '28', correct: false },
+          { text: '115', correct: false },
+          { text: 'None', correct: false }
+        ]
+      },
+      {
+        question: 'What was the purpose of the concrete sarcophagus constructed around the damaged reactor?',
+        answers: [
+          { text: 'None of the stated', correct: false },
+          { text: 'To evacuate people from the area', correct: false },
+          { text: 'To prevent further spread of contamination', correct: false },
+          { text: 'To contain the radioactive material', correct: true }
+        ]
+      }
+    ]  
+  }
+  if(diff==3){
+    questions = [
+      {
+        question: 'Who is widely accepted to have made the first recorded discovery of America?',
+        answers: [
+          { text: 'Christopher Columbus', correct: true },
+          { text: 'Leif Erikson', correct: false },
+          { text: 'Marco Polo', correct: false },
+          { text: 'Vasco da Gama', correct: false }
+        ]
+      },
+      {
+        question: 'What was the immediate impact of the discovery of America on the indigenous populations?',
+        answers: [
+          { text: 'Displacement and disease', correct: true },
+          { text: 'Wealth and prosperity', correct: false },
+          { text: 'Religious conversion', correct: false },
+          { text: 'Development of new trade routes', correct: false }
+        ]
+      },
+      {
+        question: 'What led to the widespread destruction of cultures in the New World?',
+        answers: [
+          { text: 'The imposition of European customs and beliefs', correct: true },
+          { text: 'The spread of Christianity', correct: false },
+          { text: 'The transatlantic slave trade', correct: false },
+          { text: 'The exploitation of resources', correct: false }
+        ]
+      },
+      {
+        question: 'How did the discovery of America contribute to the development of the modern world?',
+        answers: [
+          { text: 'By introducing new foods to Europe', correct: false },
+          { text: 'By leading to the displacement of autochthonous peoples', correct: false },
+          { text: 'By providing a source of wealth and resources for European colonizers', correct: false },
+          { text: 'All of the stated', correct: true }
+        ]
+      }
+    ]  
+  }
   }
 }

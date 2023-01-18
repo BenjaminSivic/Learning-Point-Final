@@ -143,14 +143,19 @@
           </div>
           <div class="stats5">
             <span class="answers">Correct Answers:</span>
-            <span id="answer" class="answerNum">0</span>
+            <span id="answer" class="answerNum"></span>
           </div>
         </div>
       </div>
     </div>
-
+    <img src="./icon/Do-1-Quiz.png" class="quizA"/>
+    <img src="./icon/Read-1-Text.png" class="readA"/>
     <script>
+      answers=document.getElementById("answer").innerHTML;
       function LoadStats(){
+        answers=answers+localStorage.getItem("answeredQs");
+        document.getElementById("quiz").innerHTML=localStorage.getItem("CompletedQuizzes");
+        document.getElementById("answer").innerHTML=answers;
         document.getElementById("User").innerHTML=localStorage.getItem("Username");
         sec=localStorage.getItem("Seconds");
         min=localStorage.getItem("Minutes");
