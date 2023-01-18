@@ -125,7 +125,12 @@
           
           <audio id="scienceMediumLenMediumCompFemale" src="./audio/scineceMedCompxLongFemale.mp3"></audio>
           <audio id="scienceMediumLenMediumCompMale" src="./audio/scienceMedComplxLongMale.mp3"></audio>
+
+          <audio id="historyComplexShortFemale" src="./audio/historyComplexShortFemale.mp3"></audio>
+          <audio id="historyComplexShortMale" src="./audio/historyComplexShortMale.mp3"></audio>
          
+          <audio id="sports" src="./audio/sportsShortMedCompFemale.mp3"></audio>
+          <audio id="sports2" src="./audio/sportsMediumComplxShortMale.mp3"></audio>
 
           <script>
             var x;
@@ -143,11 +148,21 @@
                 }
               }
               if(topic==2){
-
+                if(voice!=1){
+                  x=document.getElementById("");
+                }
+                else{
+                  x=document.getElementById("")
+                }
               }
 
               if(topic==3){
-
+                if(voice!=1){
+                  x=document.getElementById("sports");
+                }
+                else{
+                  x=document.getElementById("sports2");
+                }
               }
               
               if(topic==4){
@@ -160,12 +175,21 @@
               }
 
               if(topic==5){
-
+                if(voice!=1){
+                  x=document.getElementById("");
+                }
+                else{
+                  x=document.getElementById("")
+                }
               }
 
               if(topic==6){
-
-                
+                if(voice!=1){
+                  x=document.getElementById("historyComplexShortFemale");
+                }
+                else{
+                  x=document.getElementById("historyComplexShortMale")
+                }
               }
             }
 
