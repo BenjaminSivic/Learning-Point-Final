@@ -263,7 +263,7 @@
             <br />
           </span>
           <div class="settings-buttons">
-            <button id="Profile" class="button-profile">View Profile</button>
+            <button onclick="Profile()" id="Profile" class="button-profile">View Profile</button>
             <button onclick="LogOut()" id="LogOut" class="button-log">Log Out</button>
           </div>
 
@@ -440,6 +440,9 @@
       let username;
       let voice=0;
 
+      function Profile(){
+        window.open("./profile.html", "_top");
+      }
      
       function Continue(){
         username=document.getElementById("user").value;
