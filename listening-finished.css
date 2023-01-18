@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(./fonts/Satoshi-Medium.ttf);
+}
+
 .quizA{
   z-index: 1000;
   width: 19%;
@@ -245,7 +250,7 @@
   align-self: auto;
   font-style: Bold;
   text-align: left;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 700;
   line-height: normal;
   font-stretch: normal;
@@ -264,7 +269,7 @@
   align-self: auto;
   font-style: Bold;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 700;
   line-height: normal;
   font-stretch: normal;
@@ -283,7 +288,7 @@
   align-self: auto;
   font-style: Bold;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 700;
   line-height: normal;
   font-stretch: normal;
@@ -302,7 +307,7 @@
   align-self: auto;
   font-style: Medium;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -321,7 +326,7 @@
   align-self: auto;
   font-style: Medium;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 500;
   line-height: normal;
   font-stretch: normal;
@@ -389,7 +394,7 @@
   align-self: auto;
   font-style: Bold;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 700;
   line-height: normal;
   font-stretch: normal;
@@ -407,7 +412,7 @@
   align-self: auto;
   font-style: Light;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -425,7 +430,7 @@
   align-self: auto;
   font-style: Light;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;
@@ -443,7 +448,7 @@
   align-self: auto;
   font-style: Light;
   text-align: center;
-  font-family: Inter;
+  font-family: Satoshi;
   font-weight: 300;
   line-height: normal;
   font-stretch: normal;

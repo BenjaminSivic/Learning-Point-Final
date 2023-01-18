@@ -140,6 +140,7 @@
             var voice=localStorage.getItem("Voice");
             function setAudio(){
               if(topic==1){
+                document.getElementById('Title').innerText="Modern Communication";
                 if(voice!=1){
                   x=document.getElementById("scienceMediumLenMediumCompFemale");
                 }
@@ -157,6 +158,7 @@
               }
 
               if(topic==3){
+                document.getElementById('Title').innerText="Cycling";
                 if(voice!=1){
                   x=document.getElementById("sports");
                 }
@@ -167,6 +169,7 @@
               
               if(topic==4){
                 if(voice!=1){
+                  document.getElementById('Title').innerText="Music";
                   x=document.getElementById("musicMediumComplexLongFemale");
                 }
                 else{
@@ -184,6 +187,7 @@
               }
 
               if(topic==6){
+                document.getElementById('Title').innerText="The Discovery of America";
                 if(voice!=1){
                   x=document.getElementById("historyComplexShortFemale");
                 }
@@ -262,8 +266,8 @@
               </span>
             </span>
           </span>
-          <span class="listening-start-text09">
-            <span>Platea Conubia</span>
+          <span id="Title" class="listening-start-text09">
+            <span></span>
           </span>
           <a href="index.html">
           <img src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/13d4cd1f-0cd7-4436-a18c-45a2ce43e75f?org_if_sml=1655"
