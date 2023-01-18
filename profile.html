@@ -154,7 +154,11 @@
     <script>
       answers=document.getElementById("answer").innerHTML;
       function LoadStats(){
+        if(localStorage.getItem("answeredQs")==null){
+          answers=0;
+        }else{
         answers=answers+localStorage.getItem("answeredQs");
+        }
         document.getElementById("quiz").innerHTML=localStorage.getItem("CompletedQuizzes");
         document.getElementById("answer").innerHTML=answers;
         document.getElementById("User").innerHTML=localStorage.getItem("Username");
