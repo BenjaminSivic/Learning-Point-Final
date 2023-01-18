@@ -95,7 +95,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body onload="SetWords()">
     <div>
       <link href="./dictionary-open.css" rel="stylesheet" />
 
@@ -150,24 +150,23 @@
               src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/3faaf2c2-6efe-4d8e-9ecb-5db67839b506?org_if_sml=113074"
               class="dictionary-open-rectangle20"
             />
-            <img
-              alt="Line97273"
-              src="public/playground_assets/line97273-0g6.svg"
-              class="dictionary-open-line9"
-            />
+           
             <div class="dictionary-open-chemistry">
               <span class="dictionary-open-text10">
-                <span>Your saved words will appear here.</span>
+                <span id="words">Your saved words will appear here.</span>
               </span>
             </div>
-            <img
-              alt="expand17273"
-              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/d4604b46-2809-4c78-a320-72e6928de3e8?org_if_sml=1359"
-              class="dictionary-open-expand1"
-            />
+           
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      let saved;
+      function SetWords(){
+        document.getElementById("words").innerText=localStorage.getItem("Words");
+      }
+    </script>
   </body>
 </html>

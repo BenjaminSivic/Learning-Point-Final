@@ -133,15 +133,12 @@
             
             <div>
               <div id="btn-grid" class="button-grid">
-                <button onclick="Hist()" id="History" class="button-answer">History</button>
-                <button onclick="Physics()" id="Physics" class="button-answer">Physics</button>
-                <button onclick="Geography()" id="Geography" class="button-answer">Geography</button>
-                <button onclick="Informatics()" id="Informatics" class="button-answer">Informatics</button>
-                <button onclick="Music()" id="Music" class="button-answer">Music</button>
-                <button onclick="Biology()" id="Biology" class="button-answer">Biology</button>
-                <button onclick="Literature()" id="Literature" class="button-answer">Literature</button>
-                <button onclick="Art()" id="Art" class="button-answer">Art</button>
-                <button onclick="Chemistry()" id="Chemistry" class="button-answer">Chemistry</button>
+                <button onclick="Science()" id="Science" class="button-answer">Science</button>
+                  <button onclick="Geography()" id="Geography" class="button-answer">Geography</button>
+                  <button onclick="Sport()" id="Sport" class="button-answer">Sport</button>
+                  <button onclick="Music()" id="Music" class="button-answer">Music</button>
+                  <button onclick="Literature()" id="Literature" class="button-answer">Literature</button>
+                  <button onclick="Art()" id="Art" class="button-answer">Art</button>
             </div>
             <div>
               <div id="btn-grid-diff" class="button-grid-diff">
@@ -175,11 +172,13 @@
               src="public/playground_assets/line87270-u2i.svg"
               class="listening-open-line8"
             />
+            <a href="./index.html">
             <img
               alt="Closebutton7264"
               src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/e1364399-38ba-4907-92bb-024cfb91ee12?org_if_sml=11024"
               class="listening-open-closebutton"
             />
+            </a>
           </div>
         </div>
       </div>
@@ -187,10 +186,12 @@
 
     <script>
 
-      var topic=1;
-      var difficulty=1;
+      var topic=0;
+      var difficulty=0;
+      var length=0;
 
       function Short(){
+        length=1;
         document.getElementById("Short").style.backgroundColor="#50B5FF";
         document.getElementById("Short").style.color="white";
         document.getElementById("Medium").style.backgroundColor="#F0F0F0";
@@ -200,6 +201,7 @@
       }
 
       function Medium(){
+        length=2;
         document.getElementById("Short").style.backgroundColor="#F0F0F0";
         document.getElementById("Short").style.color="#929292";
         document.getElementById("Medium").style.backgroundColor="#50B5FF";
@@ -209,6 +211,7 @@
       }
 
       function Long(){
+        length=3;
         document.getElementById("Short").style.backgroundColor="#F0F0F0";
         document.getElementById("Short").style.color="#929292";
         document.getElementById("Medium").style.backgroundColor="#F0F0F0";
@@ -252,204 +255,140 @@
       }
 
 
-      function Hist(){
+      function Science(){
         topic = 1;
-        document.getElementById("History").style.backgroundColor="#50B5FF";
-        document.getElementById("History").style.color="white";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
+        document.getElementById("Science").style.backgroundColor="#50B5FF";
+        document.getElementById("Science").style.color="white";
+        
         document.getElementById("Geography").style.backgroundColor="#F0F0F0";
         document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
+        
         document.getElementById("Music").style.backgroundColor="#F0F0F0";
         document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
+        
         document.getElementById("Literature").style.backgroundColor="#F0F0F0";
         document.getElementById("Literature").style.color="#929292";
+
         document.getElementById("Art").style.backgroundColor="#F0F0F0";
         document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
 
+        document.getElementById("Sport").style.backgroundColor="#F0F0F0";
+        document.getElementById("Sport").style.color="#929292";
+        
         
       }
 
-      function Physics(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#50B5FF";
-        document.getElementById("Physics").style.color="white";
-        document.getElementById("Geography").style.backgroundColor="#F0F0F0";
-        document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
-        document.getElementById("Music").style.backgroundColor="#F0F0F0";
-        document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
-        document.getElementById("Literature").style.backgroundColor="#F0F0F0";
-        document.getElementById("Literature").style.color="#929292";
-        document.getElementById("Art").style.backgroundColor="#F0F0F0";
-        document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
-
-        topic = 2;
-      }
       function Geography(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
+        topic=2;
         document.getElementById("Geography").style.backgroundColor="#50B5FF";
         document.getElementById("Geography").style.color="white";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
+        
+        document.getElementById("Science").style.backgroundColor="#F0F0F0";
+        document.getElementById("Science").style.color="#929292";
+        
         document.getElementById("Music").style.backgroundColor="#F0F0F0";
         document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
+        
         document.getElementById("Literature").style.backgroundColor="#F0F0F0";
         document.getElementById("Literature").style.color="#929292";
+
         document.getElementById("Art").style.backgroundColor="#F0F0F0";
         document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
-        topic = 3;
+
+        document.getElementById("Sport").style.backgroundColor="#F0F0F0";
+        document.getElementById("Sport").style.color="#929292";
       }
-      function Informatics(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
+      function Sport(){
+        topic=3;
+        document.getElementById("Sport").style.backgroundColor="#50B5FF";
+        document.getElementById("Sport").style.color="white";
+        
         document.getElementById("Geography").style.backgroundColor="#F0F0F0";
         document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#50B5FF";
-        document.getElementById("Informatics").style.color="white";
+        
         document.getElementById("Music").style.backgroundColor="#F0F0F0";
         document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
+        
         document.getElementById("Literature").style.backgroundColor="#F0F0F0";
         document.getElementById("Literature").style.color="#929292";
+
         document.getElementById("Art").style.backgroundColor="#F0F0F0";
         document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
-        topic = 4;
+
+        document.getElementById("Science").style.backgroundColor="#F0F0F0";
+        document.getElementById("Science").style.color="#929292";
       }
       function Music(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
-        document.getElementById("Geography").style.backgroundColor="#F0F0F0";
-        document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
+        topic=4;
         document.getElementById("Music").style.backgroundColor="#50B5FF";
         document.getElementById("Music").style.color="white";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
-        document.getElementById("Literature").style.backgroundColor="#F0F0F0";
-        document.getElementById("Literature").style.color="#929292";
-        document.getElementById("Art").style.backgroundColor="#F0F0F0";
-        document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
-        topic = 5;
-      }
-      function Biology(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
+        
         document.getElementById("Geography").style.backgroundColor="#F0F0F0";
         document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
-        document.getElementById("Music").style.backgroundColor="#F0F0F0";
-        document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#50B5FF";
-        document.getElementById("Biology").style.color="white";
+        
+        document.getElementById("Science").style.backgroundColor="#F0F0F0";
+        document.getElementById("Science").style.color="#929292";
+        
         document.getElementById("Literature").style.backgroundColor="#F0F0F0";
         document.getElementById("Literature").style.color="#929292";
+
         document.getElementById("Art").style.backgroundColor="#F0F0F0";
         document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
-        topic = 6;
+
+        document.getElementById("Sport").style.backgroundColor="#F0F0F0";
+        document.getElementById("Sport").style.color="#929292";
       }
+     
       function Literature(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
-        document.getElementById("Geography").style.backgroundColor="#F0F0F0";
-        document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
-        document.getElementById("Music").style.backgroundColor="#F0F0F0";
-        document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
+        topic=5;
         document.getElementById("Literature").style.backgroundColor="#50B5FF";
         document.getElementById("Literature").style.color="white";
+        
+        document.getElementById("Geography").style.backgroundColor="#F0F0F0";
+        document.getElementById("Geography").style.color="#929292";
+        
+        document.getElementById("Music").style.backgroundColor="#F0F0F0";
+        document.getElementById("Music").style.color="#929292";
+        
+        document.getElementById("Science").style.backgroundColor="#F0F0F0";
+        document.getElementById("Science").style.color="#929292";
+
         document.getElementById("Art").style.backgroundColor="#F0F0F0";
         document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
-        topic = 7;
+
+        document.getElementById("Sport").style.backgroundColor="#F0F0F0";
+        document.getElementById("Sport").style.color="#929292";
       } 
       function Art(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
-        document.getElementById("Geography").style.backgroundColor="#F0F0F0";
-        document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
-        document.getElementById("Music").style.backgroundColor="#F0F0F0";
-        document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
-        document.getElementById("Literature").style.backgroundColor="#F0F0F0";
-        document.getElementById("Literature").style.color="#929292";
+        topic=6;
         document.getElementById("Art").style.backgroundColor="#50B5FF";
         document.getElementById("Art").style.color="white";
-        document.getElementById("Chemistry").style.backgroundColor="#F0F0F0";
-        document.getElementById("Chemistry").style.color="#929292";
-        topic = 8;
-      }
-      function Chemistry(){
-        document.getElementById("History").style.backgroundColor="#F0F0F0";
-        document.getElementById("History").style.color="#929292";
-        document.getElementById("Physics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Physics").style.color="#929292";
+        
         document.getElementById("Geography").style.backgroundColor="#F0F0F0";
         document.getElementById("Geography").style.color="#929292";
-        document.getElementById("Informatics").style.backgroundColor="#F0F0F0";
-        document.getElementById("Informatics").style.color="#929292";
+        
         document.getElementById("Music").style.backgroundColor="#F0F0F0";
         document.getElementById("Music").style.color="#929292";
-        document.getElementById("Biology").style.backgroundColor="#F0F0F0";
-        document.getElementById("Biology").style.color="#929292";
+        
         document.getElementById("Literature").style.backgroundColor="#F0F0F0";
         document.getElementById("Literature").style.color="#929292";
-        document.getElementById("Art").style.backgroundColor="#F0F0F0";
-        document.getElementById("Art").style.color="#929292";
-        document.getElementById("Chemistry").style.backgroundColor="#50B5FF";
-        document.getElementById("Chemistry").style.color="white";
-        topic = 9;
+
+        document.getElementById("Science").style.backgroundColor="#F0F0F0";
+        document.getElementById("Science").style.color="#929292";
+
+        document.getElementById("Sport").style.backgroundColor="#F0F0F0";
+        document.getElementById("Sport").style.color="#929292";
       }
 
       function StartListen(){
+        if(topic==0 || difficulty==0 || length==0){
+          window.alert("Please select topic, difficulty and length.");
+        }else{
         localStorage.setItem("Topic", topic);
         localStorage.setItem("Difficulty", difficulty);
+        localStorage.setItem("Length", length);
         window.open('listening-start.html', '_top')
+        }
       }
 
     </script>

@@ -1,3 +1,5 @@
+
+
 .input-field{
   border: 0;
   outline: none;
@@ -63,7 +65,7 @@
 }
 .unknown-words-finish {
   top: 472px;
-  left: 118px;
+  left: 100px;
   width: 83px;
   height: 43px;
   display: flex;
@@ -85,7 +87,7 @@
 }
 .unknown-words-text2 {
   top: 10px;
-  left: 17px;
+  left: 100px;
   color: rgba(140, 140, 140, 1);
   height: auto;
   position: absolute;

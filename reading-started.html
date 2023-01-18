@@ -95,7 +95,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body onload="Time();MainText()">
+  <body onload="Time();MainText();UnkownWords()">
     <div>
       <link href="./reading-started.css" rel="stylesheet" />
 
@@ -146,7 +146,7 @@
         <div id="UnkownContainer" class="unknown-words-container">
           <div class="unknown-words-unknown-words">
             <span class="unknown-words-text">
-              <span>Write unknown word here:</span>
+              <span>Commonly uknown words:</span>
             </span>
             <img
               src="public/playground_assets/rectangle268836-4v6-300w.png"
@@ -154,12 +154,10 @@
               class="unknown-words-rectangle26"
             />
             
-            <textarea class="input-field" type="text"></textarea>
-            <a onclick="HideWords()">
-            <div class="unknown-words-finish">
-              <span class="unknown-words-text2"><span>Close</span></span>
-            </div>
-            </a>
+            <textarea id="area" class="input-field" type="text"></textarea>
+            <button onclick="AddWords()" id="dictionary" class="dictionary">Add to dictionary</button>
+            
+            <button onclick="HideWords()" id="close" class="close">Close</button>
 
           </div>
         </div>
@@ -169,6 +167,16 @@
     
 
     <script>
+      let words;
+      function AddWords(){
+        words=document.getElementById("area").value;
+        localStorage.setItem("Words", words);
+      }
+
+      function UnkownWords(){
+        document.getElementById("area").innerText="Genetic engineering: A process that uses laboratory-based technologies to alter the DNA makeup of an organism. This may involve changing a single base pair (A-T or C-G), deleting a region of DNA or adding a new segment of DNA. ________________________________ Designer baby: a baby whose genetic makeup has been selected or altered, often to not include a particular gene or to remove genes associated with disease. ________________________________ Exacerbate: make (a problem, bad situation, or negative feeling) worse. ________________________________ Marginalized: placed in a position of little or no importance, influence, or power ________________________________ Eugenics: the scientifically erroneous and immoral theory of “racial improvement” and “planned breeding,” which gained popularity during the early 20th century.";
+      }
+
       function OpenQuiz(){
         localStorage.setItem("Minutes",min);
         localStorage.setItem("Seconds", sec)

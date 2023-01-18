@@ -1,3 +1,31 @@
+@font-face {
+  font-family: Satoshi;
+  src: url(./fonts/Satoshi-Medium.ttf);
+}
+.dictionary{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 15%;
+  left: 10%;
+  position:absolute;
+  width: 80%;
+  height: 78%;
+  background-color: #F0F0F0;
+  border-radius: 30px;
+}
+.words{
+  top:2%;
+  left:2%;
+  position:relative;
+  font-family: Satoshi;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 10%;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
 .dictionary-container {
   width: 100%;
   display: flex;

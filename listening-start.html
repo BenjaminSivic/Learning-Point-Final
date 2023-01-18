@@ -119,10 +119,55 @@
             <span id="TimerSec" class="listening-start-text3">00</span>
           </div>
 
-          <audio id="myAudio" src="./audio/musicComplexMediumFemale.mp3"></audio>
+          
+          <audio id="musicMediumComplexLongFemale" src="./audio/musicMediumComplexLongFemale.mp3"></audio>
+          <audio id="musicMediumComplxLongMale" src="./audio/musicMediumComplxLongMale.mp3"></audio>
+          
+          <audio id="scienceMediumLenMediumCompFemale" src="./audio/scineceMedCompxLongFemale.mp3"></audio>
+          <audio id="scienceMediumLenMediumCompMale" src="./audio/scienceMedComplxLongMale.mp3"></audio>
+         
 
           <script>
-            var x = document.getElementById("myAudio"); 
+            var x;
+            var topic=localStorage.getItem("Topic");
+            var diff=localStorage.getItem("Difficulty");
+            var length=localStorage.getItem("Length");
+            var voice=localStorage.getItem("Voice");
+            function setAudio(){
+              if(topic==1){
+                if(voice!=1){
+                  x=document.getElementById("scienceMediumLenMediumCompFemale");
+                }
+                else{
+                  x=document.getElementById("scienceMediumLenMediumCompMale")
+                }
+              }
+              if(topic==2){
+
+              }
+
+              if(topic==3){
+
+              }
+              
+              if(topic==4){
+                if(voice!=1){
+                  x=document.getElementById("musicMediumComplexLongFemale");
+                }
+                else{
+                  x=document.getElementById("musicMediumComplxLongMale")
+                }
+              }
+
+              if(topic==5){
+
+              }
+
+              if(topic==6){
+
+                
+              }
+            }
 
           function playAudio() { 
             x.play(); 
@@ -142,17 +187,12 @@
           aud.onended = function() {
           window.open('quiz.html', '_top');
           };
+
+          
           </script>
           
 
-          <script>
-
-            function setAudio(){
-              console.log("Its working")
-            }
-            
-
-
+          <script>       
             var timer;
             var seconds=document.getElementById('TimerSec');
             var minutes=document.getElementById('TimerMin');

@@ -1,3 +1,19 @@
+.quizA{
+  z-index: 1000;
+  width: 19%;
+  height: 8%;
+  left:30.5%;
+  top:77.3%;
+  position: absolute;
+}
+.readA{
+  z-index: 1000;
+  width: 18.5%;
+  height: 7.5%;
+  left:50.5%;
+  top:77.3%;
+  position: absolute;
+}
 .reading-finished-container {
   width: 100%;
   display: flex;
@@ -293,7 +309,7 @@
 }
 .reading-finished-rectangle45 {
   top: 655px;
-  left: 86px;
+  left: 52%;
   width: 62px;
   height: 62px;
   position: absolute;
@@ -302,7 +318,7 @@
 }
 .reading-finished-rectangle46 {
   top: 655px;
-  left: 163px;
+  left: 32%;
   width: 62px;
   height: 62px;
   position: absolute;
@@ -347,16 +363,16 @@
 }
 .reading-finished-text12 {
   top: 723px;
-  left: 99px;
+  left: 32%;
   color: rgba(133, 133, 133, 1);
   height: auto;
   position: absolute;
-  font-size: 17px;
+  font-size: 16px;
   align-self: auto;
   font-style: Light;
   text-align: center;
-  font-family: Inter;
-  font-weight: 300;
+  font-family: Satoshi;
+  font-weight: 600;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;
@@ -365,16 +381,16 @@
 }
 .reading-finished-text14 {
   top: 723px;
-  left: 254px;
+  left: 52%;
   color: rgba(133, 133, 133, 1);
   height: auto;
   position: absolute;
-  font-size: 17px;
+  font-size: 16px;
   align-self: auto;
   font-style: Light;
   text-align: center;
-  font-family: Inter;
-  font-weight: 300;
+  font-family: Satoshi;
+  font-weight: 600;
   line-height: normal;
   font-stretch: normal;
   margin-right: 0;

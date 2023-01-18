@@ -183,18 +183,15 @@
           <span class="reading-finished-text">
             <span>Congratulations!</span>
           </span>
-          <span class="reading-finished-text02">
-            <span>Your reading speed:</span>
-          </span>
+        
           <span class="reading-finished-text04">
             <span>Achievements:</span>
           </span>
-          <span class="reading-finished-text06">
+          <span id="answered" class="reading-finished-text06">
             <span>You finished the quiz with 0 correct answers!</span>
           </span>
-          <span class="reading-finished-text08">
-            <span>10 Words Per Minute</span>
-          </span>
+          <img src="./icon/Do-1-Quiz.png" class="quizA"/>
+          <img src="./icon/Read-1-Text.png" class="readA"/>
           <img
             alt="Line101056"
             src="public/playground_assets/line101056-tbx.svg"
@@ -215,20 +212,20 @@
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/62e26ead-88fc-48e3-ad92-805cd6204629?org_if_sml=1680"
             class="reading-finished-rectangle46"
           />
-          <img
-            alt="Rectangle471057"
-            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/0337ee3c-bcec-45a8-9210-55a88481338d?org_if_sml=1680"
-            class="reading-finished-rectangle47"
-          />
+          <a href="./index.html">
           <img
             alt="Rectangle481057"
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b4901923-465b-4483-94cd-f1254d30d0e4/df0e3db7-21ea-4e9c-9cef-dec611949fef?org_if_sml=11014"
             class="reading-finished-rectangle48"
           />
           <span class="reading-finished-text10"><span>Close</span></span>
-          <span class="reading-finished-text12"><span>Test</span></span>
-          <span class="reading-finished-text14"><span>Test</span></span>
-          <span class="reading-finished-text16"><span>Test</span></span>
+          </a>
+          <span class="reading-finished-text12"><span>1st Quiz</span></span>
+         
+          <span class="reading-finished-text14"><span>1st Read</span></span>
+          <script>
+            document.getElementById('answered').innerText="You finished the quiz with "+localStorage.getItem("answeredQs")+" correct answers!";
+          </script>
         </div>
       </div>
     </div>
