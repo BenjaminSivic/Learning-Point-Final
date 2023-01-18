@@ -83,10 +83,10 @@
   top: 8%;
   left: 39px;
   color: rgba(0, 0, 0, 1);
-  width: 242px;
+  width: 270px;
   height: auto;
   position: absolute;
-  font-size: 20px;
+  font-size: 21px;
   align-self: auto;
   font-style: Bold;
   text-align: left;
@@ -186,7 +186,7 @@
 }
 .reading-started-minutes {
   top: 14px;
-  left: 17px;
+  left: 16px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -202,7 +202,7 @@
 }
 .reading-started-colon {
   top: 13px;
-  left: 51px;
+  left: 50px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -218,7 +218,7 @@
 }
 .reading-started-seconds {
   top: 14px;
-  left: 59px;
+  left: 58px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -255,8 +255,8 @@
   background-color: rgba(81, 182, 255, 1);
 }
 .reading-started-text13 {
-  top: 20%;
-  left: 18%;
+  top: 18%;
+  left: 17%;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;

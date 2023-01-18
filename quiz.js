@@ -466,6 +466,126 @@ function SetTopic(){
   }
   }
   if(topic==2){
+    if(diff==1){
+      questions = [
+        {
+          question: 'What is the process that causes cliffs and rocky outcroppings to slowly crumble and fall into the sea?',
+          answers: [
+            { text: 'Erosion', correct: true },
+            { text: 'Deposition', correct: false },
+            { text: 'Tectonic activity', correct: false },
+            { text: 'Sedimentation', correct: false }
+          ]
+        },
+        {
+          question: 'What is the process by which materials like sand and mud are deposited by water or wind?',
+          answers: [
+            { text: 'Sedimentation', correct: true },
+            { text: 'Erosion', correct: false },
+            { text: 'Deposition', correct: false },
+            { text: 'Tectonic activity', correct: false }
+          ]
+        },
+        {
+          question: 'What is the movement of the earths crust that can cause the land to rise or fall?',
+          answers: [
+            { text: 'Sedimentation', correct: false },
+            { text: 'Tectonic activity', correct: true },
+            { text: 'Deposition', correct: false },
+            { text: 'Erosion', correct: false }
+          ]
+        },
+        {
+          question: 'How does the freeze-thaw cycle accelerate the erosion of cliffs in colder climates?',
+          answers: [
+            { text: 'By causing the rock to melt when it freezes', correct: false },
+            { text: 'By causing the rock to absorb water when it freezes', correct: false },
+            { text: 'By causing the rock to contract when it freezes', correct: false },
+            { text: 'By causing the rock to expand when it freezes', correct: true }
+          ]
+        }
+      ]  
+    }
+    if(diff==2){
+      questions = [
+        {
+          question: 'What causes earthquakes?',
+          answers: [
+            { text: 'The movement of tectonic plates', correct: true },
+            { text: 'Volcanic eruptions', correct: false },
+            { text: 'Weather patterns', correct: false },
+            { text: 'Human activity', correct: false }
+          ]
+        },
+        {
+          question: 'What is the most powerful type of earthquake?',
+          answers: [
+            { text: 'Convergent boundary', correct: true },
+            { text: 'Divergent boundary', correct: false },
+            { text: 'Transform boundary', correct: false },
+            { text: 'None of the stated', correct: false }
+          ]
+        },
+        {
+          question: 'What is the Richter scale used for?',
+          answers: [
+            { text: 'Measuring the intensity of earthquakes', correct: false },
+            { text: 'Measuring the magnitude of earthquakes', correct: true },
+            { text: 'Measuring the frequency of earthquakes', correct: false },
+            { text: 'Measuring the distance of earthquakes', correct: false }
+          ]
+        },
+        {
+          question: 'What is the range of the Richter scale?',
+          answers: [
+            { text: '1-5', correct: false },
+            { text: '1-7', correct: false },
+            { text: '2-10', correct: false },
+            { text: '1-10', correct: true }
+          ]
+        }
+      ]  
+    }
+    if(diff==3){
+      questions = [
+        {
+          question: 'What is the aphotic zone in marine biology?',
+          answers: [
+            { text: 'The zone of the ocean where the pressure is extreme', correct: true },
+            { text: 'The zone of the ocean where sunlight can penetrate', correct: false },
+            { text: 'The zone of the ocean where bioluminescent fish live', correct: false },
+            { text: 'The zone of the ocean where phytoplankton live', correct: false }
+          ]
+        },
+        {
+          question: 'What are some examples of habituated organisms found in the aphotic zone?',
+          answers: [
+            { text: 'Bioluminescent fish and deep-sea crabs', correct: true },
+            { text: 'Sharks and whales', correct: false },
+            { text: 'Phytoplankton and coral', correct: false },
+            { text: 'Seagulls and dolphins', correct: false }
+          ]
+        },
+        {
+          question: 'What is the main goal of marine biology?',
+          answers: [
+            { text: 'To promote conservation and sustainable use of the ocean', correct: false },
+            { text: 'To study and understand the intricacies of the ocean', correct: true },
+            { text: 'To find new resources in the ocean', correct: false },
+            { text: 'To understand the impact of human activities on the ocean', correct: false }
+          ]
+        },
+        {
+          question: 'Why is the study of marine organisms, their adaptation, and their ecosystems important?',
+          answers: [
+            { text: 'To better understand the intricacies of the ocean', correct: false },
+            { text: 'To find new resources in the ocean', correct: false },
+            { text: 'To understand the impact of human activities on the ocean', correct: false },
+            { text: 'To promote conservation and sustainable use of the ocean', correct: true }
+          ]
+        }
+      ]  
+    }
   }
 
   if(topic==3){

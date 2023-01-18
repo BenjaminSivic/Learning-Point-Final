@@ -9,7 +9,7 @@
   border: 0;
   border-radius: 50px;
   font-family: Satoshi;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   background-color: #FD9191;
   color: white;
@@ -24,7 +24,7 @@
   border: 0;
   border-radius: 50px;
   font-family: Satoshi;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   background-color: #F0F0F0;
   color: #929292;
@@ -35,7 +35,7 @@
   border: 0;
   border-radius: 50px;
   font-family: Satoshi;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   background-color: #F0F0F0;
   color: #929292;
@@ -50,7 +50,7 @@
     border: 0;
     border-radius: 50px;
     font-family: Satoshi;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     background-color: #FD9191;
     color: white;
@@ -61,7 +61,7 @@
     border: 0;
     border-radius: 50px;
     font-family: Satoshi;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     background-color: #B0A4FF;
     color: white;
@@ -115,7 +115,7 @@
   font-style: Black;
   text-align: left;
   font-family: Satoshi;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 139.9999976158142%;
   font-stretch: normal;
   margin-right: 0;
