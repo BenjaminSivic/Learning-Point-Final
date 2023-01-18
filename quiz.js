@@ -673,7 +673,126 @@ function SetTopic(){
   }
 
   if(topic==5){
-
+    if(diff==1){
+      questions = [
+        {
+          question: 'What was Mastro Cherrys real name?',
+          answers: [
+            { text: 'Mastro Antonio', correct: true },
+            { text: 'Mastro Cherry', correct: false },
+            { text: 'Mastro Wood', correct: false },
+            { text: 'Mastro Table', correct: false }
+          ]
+        },
+        {
+          question: 'What did Mastro Cherry intend to make with the piece of wood?',
+          answers: [
+            { text: 'A leg for a table', correct: true },
+            { text: 'A chair', correct: false },
+            { text: 'A firewood', correct: false },
+            { text: 'A toy', correct: false }
+          ]
+        },
+        {
+          question: 'What did Mastro Cherry think when he heard the voice coming from the piece of wood?',
+          answers: [
+            { text: 'He thought it was a prank', correct: false },
+            { text: 'He thought he was imagining things', correct: true },
+            { text: 'He thought it was a ghost', correct: false },
+            { text: 'He thought it was a magic', correct: false }
+          ]
+        },
+        {
+          question: 'How did Mastro Cherry feel when the voice spoke again?',
+          answers: [
+            { text: 'Happy', correct: false },
+            { text: 'Surprised', correct: false },
+            { text: 'Angry', correct: false },
+            { text: 'Confused', correct: true }
+          ]
+        }
+      ]  
+    }
+    if(diff==2){
+      questions = [
+        {
+          question: 'Why does the narrator have a preference for sailing on a Nantucket craft?',
+          answers: [
+            { text: 'He likes the boisterousness of the island', correct: true },
+            { text: 'He has family there', correct: false },
+            { text: 'They have the best whaling equipment', correct: false },
+            { text: 'They have the best pay for sailors', correct: false }
+          ]
+        },
+        {
+          question: 'Why did the narrator miss the last boat to Nantucket?',
+          answers: [
+            { text: 'The boat had already sailed', correct: true },
+            { text: 'He arrived late to the port', correct: false },
+            { text: 'He did not have enough money for a ticket', correct: false },
+            { text: 'The boat was full', correct: false }
+          ]
+        },
+        {
+          question: 'What is the narrators main concern while he is in New Bedford?',
+          answers: [
+            { text: 'Finding a place to sleep', correct: false },
+            { text: 'All of  the stated', correct: true },
+            { text: 'Finding a job', correct: false },
+            { text: 'Finding food', correct: false }
+          ]
+        },
+        {
+          question: 'What is the narrators strategy for finding a cheap place to stay in New Bedford?',
+          answers: [
+            { text: 'Asking locals for recommendations', correct: false },
+            { text: 'Going to the most expensive inns', correct: false },
+            { text: 'Going to the cheapest inns in the city', correct: false },
+            { text: 'Following the streets that lead towards the waterfront', correct: true }
+          ]
+        }
+      ]  
+    }
+    if(diff==3){
+      questions = [
+        {
+          question: 'Who does Buck Mulligan call out to in the text?',
+          answers: [
+            { text: 'Kinch', correct: true },
+            { text: 'Stephen Dedalus', correct: false },
+            { text: 'Mastro Cherry', correct: false },
+            { text: 'Christine', correct: false }
+          ]
+        },
+        {
+          question: 'What is Buck Mulligan carrying when he comes from the stairhead?',
+          answers: [
+            { text: 'A bowl of lather, a mirror, and a razor', correct: true },
+            { text: 'A book and a pen', correct: false },
+            { text: 'A cup of coffee and a newspaper', correct: false },
+            { text: 'A suitcase and a hat', correct: false }
+          ]
+        },
+        {
+          question: 'What does Buck Mulligan do after calling out to Kinch?',
+          answers: [
+            { text: 'He goes back to his roo', correct: false },
+            { text: 'He performs a mock religious ritual', correct: true },
+            { text: 'He makes breakfast for everyone', correct: false },
+            { text: 'He leaves the building', correct: false }
+          ]
+        },
+        {
+          question: 'What is Buck Mulligans attitude towards religious rituals?',
+          answers: [
+            { text: 'He is respectful', correct: false },
+            { text: 'He is serious', correct: false },
+            { text: 'He is indifferent', correct: false },
+            { text: 'He is irreverent', correct: true }
+          ]
+        }
+      ]  
+    }
   }
 
   if(topic==6){
