@@ -2,11 +2,18 @@
   font-family: Satoshi;
   src: url(./fonts/Satoshi-Medium.ttf);
 }
+.form__title{
+  font-family: Satoshi;
+  color: black;
+  left: 14%;
+  top: 25%;
+  position: absolute;
 
+}
 .button-answer-cont{
   width: 60%;
   height: 25%;
-  top:50%;
+  top:60%;
   left: 20%;
   position: absolute;
   border: 0;
@@ -30,8 +37,10 @@
 }
 
 .form__input {
+  top: 40%;
+  position: absolute;
   display: block;
-  width: 100%;
+  width: 72%;
   padding: 0.75rem;
   box-sizing: border-box;
   border-radius: var(--border-radius);
