@@ -173,8 +173,287 @@
         localStorage.setItem("Words", words);
       }
 
+      let SHL="Science hard long";
+      let SHM="Science HM";
+      let SHS="SC HS";
+      let SML="Genetic engineering: A process that uses laboratory-based technologies to alter the DNA makeup of an organism. This may involve changing a single base pair (A-T or C-G), deleting a region of DNA or adding a new segment of DNA. ________________________________ Designer baby: a baby whose genetic makeup has been selected or altered, often to not include a particular gene or to remove genes associated with disease. ________________________________ Exacerbate: make (a problem, bad situation, or negative feeling) worse. ________________________________ Marginalized: placed in a position of little or no importance, influence, or power ________________________________ Eugenics: the scientifically erroneous and immoral theory of “racial improvement” and “planned breeding,” which gained popularity during the early 20th century.";
+      let SMM="Science Med med";
+      let SMS="Science med short";
+      let SEL="Science ez long";
+      let SEM="Science ez mid";
+      let SES="Science ez short";
+      let MHL="Music";
+      let MHM="Music";
+      let MHS="Music";
+      let MML="Music";
+      let MMM="Music";
+      let MMS="Music";
+      let MEL="Music";
+      let MEM="Music";
+      let MES="Music";
+      let GHL="Geography ";
+      let GHM="Geography ";
+      let GHS="Geography ";
+      let GML="Geography ";
+      let GMM="Geography ";
+      let GMS="Geography ";
+      let GEL="Geography ";
+      let GEM="Geography ";
+      let GES="Geography ";
+      let LHL="Literature";
+      let LHM="Literature";
+      let LHS="Literature";
+      let LML="Literature";
+      let LMM="Literature";
+      let LMS="Literature";
+      let LEL="Literature";
+      let LEM="Literature";
+      let LES="Literature";
+      let AHL="Art";
+      let AHM="Art";
+      let AHS="Art";
+      let AML="Art";
+      let AMM="Art";
+      let AMS="Art";
+      let AEL="Art";
+      let AEM="Art";
+      let AES="Art";
+      let SPHL="Sport ";
+      let SPHM="Sport ";
+      let SPHS="Sport ";
+      let SPML="Sport ";
+      let SPMM="Sport ";
+      let SPMS="Sport ";
+      let SPEL="Sport ";
+      let SPEM="Sport ";
+      let SPES="Sport ";
+
       function UnkownWords(){
-        document.getElementById("area").innerText="Genetic engineering: A process that uses laboratory-based technologies to alter the DNA makeup of an organism. This may involve changing a single base pair (A-T or C-G), deleting a region of DNA or adding a new segment of DNA. ________________________________ Designer baby: a baby whose genetic makeup has been selected or altered, often to not include a particular gene or to remove genes associated with disease. ________________________________ Exacerbate: make (a problem, bad situation, or negative feeling) worse. ________________________________ Marginalized: placed in a position of little or no importance, influence, or power ________________________________ Eugenics: the scientifically erroneous and immoral theory of “racial improvement” and “planned breeding,” which gained popularity during the early 20th century.";
+        var topic=localStorage.getItem("Topic");
+        var diff=localStorage.getItem("Difficulty");
+        var length=localStorage.getItem("Length");
+
+        if(topic==1){
+          if(diff==1){
+            if(length==1){
+              document.getElementById("area").innerText=SES;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=SEM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=SEL;
+            }
+          }
+          if(diff==2){
+            if(length==1){
+              document.getElementById("area").innerText=SMS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=SMM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=SML;
+            }
+          }
+          if(diff==3){
+            if(length==1){
+              document.getElementById("area").innerText=SHS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=SHM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=SHL;
+            }
+          }
+        
+        }
+      
+        if(topic==2){
+          if(diff==1){
+            if(length==1){
+              document.getElementById("area").innerText=GES;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=GEM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=GEL;
+            }
+          }
+          if(diff==2){
+            if(length==1){
+              document.getElementById("area").innerText=GMS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=GMM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=GML;
+            }
+          }
+          if(diff==3){
+            if(length==1){
+              document.getElementById("area").innerText=GHS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=GHM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=GHL;
+            }
+          }
+        
+        }
+      
+        if(topic==3){
+          if(diff==1){
+            if(length==1){
+              document.getElementById("area").innerText=SPES;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=SPEM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=SPEL;
+            }
+          }
+          if(diff==2){
+            if(length==1){
+              document.getElementById("area").innerText=SPMS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=SPMM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=SPML;
+            }
+          }
+          if(diff==3){
+            if(length==1){
+              document.getElementById("area").innerText=SPHS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=SPHM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=SPHL;
+            }
+          }
+        
+        }
+      
+        if(topic==4){
+          if(diff==1){
+            if(length==1){
+              document.getElementById("area").innerText=MES;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=MEM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=MEL;
+            }
+          }
+          if(diff==2){
+            if(length==1){
+              document.getElementById("area").innerText=MMS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=MMM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=MML;
+            }
+          }
+          if(diff==3){
+            if(length==1){
+              document.getElementById("area").innerText=MHS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=MHM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=MHL;
+            }
+          }
+        
+        }
+      
+        if(topic==5){
+          if(diff==1){
+            if(length==1){
+              document.getElementById("area").innerText=LES;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=LEM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=LEL;
+            }
+          }
+          if(diff==2){
+            if(length==1){
+              document.getElementById("area").innerText=LMS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=LMM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=LML;
+            }
+          }
+          if(diff==3){
+            if(length==1){
+              document.getElementById("area").innerText=LHS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=LHM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=LHL;
+            }
+          }
+        
+        }
+      
+        if(topic==6){
+          if(diff==1){
+            if(length==1){
+              document.getElementById("area").innerText=AES;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=AEM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=AEL;
+            }
+          }
+          if(diff==2){
+            if(length==1){
+              document.getElementById("area").innerText=AMS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=AMM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=AML;
+            }
+          }
+          if(diff==3){
+            if(length==1){
+              document.getElementById("area").innerText=AHS;
+            }
+            if(length==2){
+              document.getElementById("area").innerText=AHM;
+            }
+            if(length==3){
+              document.getElementById("area").innerText=AHL;
+            }
+          }
+        
+        }
       }
 
       function OpenQuiz(){
